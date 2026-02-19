@@ -1,0 +1,52 @@
+Overriding: out_dir = out-exp3-head4
+Overriding: device = mps
+Overriding: dtype = float16
+Overriding: max_new_tokens = 1000
+Overriding: num_samples = 5
+number of parameters: 4.78M
+Loading meta from data/tinystories/meta.pkl...
+
+Ben and Lily said, "We were having no more bravery and being smart and wanted to win soon. Can we have a marker?"
+Lily and the talking girl became friends. They played together and had lots of fun. They learned a lesson that day. They had a great time playing dress-up and enjoyalone.
+<|endoftext|>
+Once upon a time, there was a little kids named Tim. Tim liked to play outside and set off. He was very happy and excited. He wore it every day when he was finished.
+One day, Tim saw a big tree. He remembered that he was so proud of his birthday. He thought he could make him happy and show him his birthday tree in the tree. He painted a piece of people on the floor. Tim couldn't wait to play with his tree again.
+<|endoftext|>
+Once upon a time, a little girl named Sue went to the park with her mom. Sue saw a big tree and wanted to climb it. She asked her mom, "Can I help people when it really climb the tree?" Her mom said, "Yes, you can help me."
+Sue was very happy and walked closer to the tre
+---------------
+
+Sam had a great idea. He asked his mom and dad, "What is wrong or not nice?" His mom said, "We understand the pascorn the wire." 
+Sam worked hard and started to cry. He worked hard to make sure that the yummy monkey was getting closer and decided to help him. He picked up his closet and spooked at Mom and said, "You're unique in my closet. I have a passport in my hands." 
+He picked up the passport and put it back in it. Mom ran to pass the passport and put it - on the passport and into it brave. Lily was so happy and thanked Mom for saving him. They played with the passport until  they were tired but happy. From then on, Mom and Lily became the best of friends.
+<|endoftext|>
+Once upon a time, there was a girl named Lily. She had a toy she liked to help her mom. One day, her mom said, "We can find some food." Lily was excited to help her mom.
+Lily saw a big tree with her cat. The tree was soft and lotion. Lily wanted to help the bird. She looked at the tree and went to the toy shelf. Li
+---------------
+
+
+Once upon a time, there was a brave little girl named Amy. Amy had a big cap to see some animals so how she would sort them. She loved to dress up and play with her friends, so she loved to run around the park in the woods.
+One day, Amy saw a big tree with a big lip. She thought it stopped so far and went to the tree to find the cat. Soon, Amy's big, tree found the pretty lipstick. It was a small note that were so big and strong. When Amy heard the note and the note was small, she asked her friend Tom. Tom said, "I am sorry, Amy. I was strong and had fun." Amy thought about it and then said, "I wanted to play a game. Let's find a safe job to share with others."
+They went to the journey and sat under the big tree to see what was happening. They looked and laughed, but they could not find anymore. They were very sad and did not want to give away. They looked at each other and laughed at the journey.
+"Why are you wearing the journey?" asked Lily.
+"I love the journey, please," Tom and Lil
+---------------
+
+Once upon a time, there was a fair frog named Freddy. Freddy loved to skip around with pretty flowers in his body bear. He loved to run and jump and run to the furniture.
+One day, Freddy saw something shiny. He did not know what it was, but he wanted to skip in the pond. So, he thought of a plan. It made it noise and painted a shiny candle.
+Freddy saw a shiny thing on a shelf. He was looking at all the pond of bones and led him to take his son. It was a wonderful thing.
+Finally, the bones sfoot and the pond were all so summer! Then they saw a cheap cat on a tree. A bird came and inside the yellow bones were broken. The bird looked at them and smiled. They played and laughed and had a lot of fun. The cat became a good friend to play with. The bird and the bird became best friends. They remembered the cat's friend and played every day.
+<|endoftext|>
+
+
+Anna and Ben are friends. They like to play in the park. One day, they see a big, red ball in the garden. It is hard and has flowers and b
+---------------
+
+One day, the bird found a nest on the ground. He wanted to keep the bird safe. So, he took it out and sat down and started to cover it. The bird was so happy, and they all said together and played together in the nest. The bird used the nest to help from under the nest.
+Nest, the bird could fly. The bird was so happy and thanked the bird. The bird flew away with its nest from the nest. The nest went back to the nest and found a kangaroo. The nest was very graceful. The bird was happy to have fed its nest. The nest was friends and they all played together every day.
+<|endoftext|>
+
+Once upon a time, there was a little girl called Mia. She was three years old. 
+One day, Mia's parents were walking out of the sun to eat. She saw her head and closed her eyes and went to find out what was happening. She wanted to see how pretty people could go, water sugar and fortunature morning. Mia was so excited to find a new year for her cartoon.
+In the end, Mia and her dad went for a walk, having a fun 
+---------------

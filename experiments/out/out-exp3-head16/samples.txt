@@ -1,0 +1,56 @@
+Overriding: out_dir = out-exp3-head16
+Overriding: device = mps
+Overriding: dtype = float16
+Overriding: max_new_tokens = 1000
+Overriding: num_samples = 5
+number of parameters: 4.78M
+Loading meta from data/tinystories/meta.pkl...
+
+Ben and Lily said, "We are so smart and silly, or fighter." They said, "We are silly and friendly."
+"We are hide and seek," the teacher said, and the teacher frowned. "We are so pretty. We are best friends."
+The teacher smiled. He said, "We don't want to go in and be our friend. I will come back soon."
+The teacher helped the teacher with the teacher and checked it away with a new stone. The teacher and the teacher became good friends. The teacher and the teacher smiled. They all lived happily ever after.
+<|endoftext|>
+
+
+Lily and Sam were playing in the snow. They liked to make big things with their hats. They had big books and water and shoes. Lily had a big dog and Ben had a red dog.
+"Let's play a game next to the dog," Sam said. "We are here to dig. We can have some lunch to dig for me. We should show you a trap and make a next time."
+They hoped they would go to sleep. They felt very tired and happy. They did not show the dog to her friends. They had a big jar and a small plane. They
+---------------
+
+Sam and Mia stopped being different. They learned to be careful and help others when they lie down. They also learned that it is better to be kind and stop fairy and friends. They promised to play together again soon.
+<|endoftext|>
+Once upon a time, there was a little bee named Mia. Mia loved to sing and dance. She was very good at catching the sky. One day, Mia met a girl named Sally. Sally was a smart girl who loved to go to the park. They would play in the park all day long.
+Sally saw a big shadow on the ground. The shadow did not know what the shadow was. Mia thought it was a big, green toy man! She loved to play with the shadow in the shadow. Soon, all the shadows were not fun to eat anything toys.
+One day, Mia went to the shadow to play. She found a big, shiny toy ball. The toy ball was very happy and thanked Mia. They played together and had lots of fun. Mia and the toy ball became good friends and played together every day.
+<|endoftext|>
+One day, a small cat named Tom was playi
+---------------
+
+
+Once upon a time, there was a blanket in a small house and a clever bug was sitting on a branch. It had a big surprise of a big, green frog! The big bug had many shows up in such a carrot and got scared.
+"Look, I found a long dress!" said Tom. The big bug wagged its tail and laughed as it wagged its tail. Tom was so happy to be back. He could bend with the big big bird again.
+As Tom covered his dress, the big bird was not dry. He saw a big, mean museum in the water. He said, "That's my dress! What do you want to dress?" Tom smiled and said, "We did not know. We wanted to dress with it." The big bird took the museum and gave it a hug and said, "I can't dress well. Let's be fresh and help each other." Tom and Max were very happy. They played with the museum all day and had lots of fun.
+<|endoftext|>
+Once upon a time, there was a gifted girl named Amy. She loved to play with her toys and make cookies. One day, she found a big, red crown in her yard. She wanted to see who would stretch it
+---------------
+
+Once upon a time, there was a fair frog named Fluffy. Fluffy loved to skip around with pretty flowers. One day, Fluffy found a new place in the ground. It was a pretty flower. Fluffy wanted to skip and play.
+Fluffy skipped and dropped the bear. He reached the flowers and finally his friends for the sky. His friends came to help him. They ran back to the store and looked at him. Fluffy held his face and skipped back home. They were safe and happy. They knew that the story was the fun in the forest helped the big boy get too far away.
+<|endoftext|>
+
+
+Lily and Ben are twins. They like to play in the park. When they see a big duck in the park. They see a big building with many people. It has many leaves and books and stars and shoes.
+"Can we open it, Lily?" Ben asks.
+"No, we can open it. It is good to be friends. Can we play in it?" OK?" Lily asks.
+"OK, but be careful. It is too heavy for you. Can we protect some food?" Ben says.
+They hear their mom coming from outside. They see their toys
+---------------
+
+One day, the cat saw a big box of tasty tasty cookies for the ground. It was very pretty and yummy. The cat said to the cat, "Thank you for helping me." The cat and the cat sat down to look at the tasty tasty cookies and family.
+The tasty cat looked at the machine and thought it would be fun to hold it. The cat was happy and thanked the dog. They became friends with Max and the cat's help. From that day on, they knew they would keep their cookies together and be happy together.
+<|endoftext|>
+Once upon a time, there was a little girl named Lily. She loved to play with her toys all day. One day, she found a shiny stick in the kitchen. It was shiny and shiny. She thought it was so big, so she could not play with it.
+Lily wanted to help the stick. She gave the stick back to Lily. They were very happy. They started to play with the stick. Lily and the stick played all day. They had so much fun.
+After playing, Lily went to the pond. She saw the stick and it decided to play with her friends. 
+---------------

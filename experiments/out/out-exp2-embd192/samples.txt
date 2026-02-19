@@ -1,0 +1,59 @@
+Overriding: out_dir = out-exp2-embd192
+Overriding: device = mps
+Overriding: dtype = float16
+Overriding: max_new_tokens = 1000
+Overriding: num_samples = 5
+number of parameters: 2.70M
+Loading meta from data/tinystories/meta.pkl...
+
+Ben yelled more and was so proud of himself. They found a secret place of sand. They smelled dark the sand and watched the truck find the sand and the birds. They had fun until they forgot friends.
+<|endoftext|>
+Once upon a time, there was a little kid named Sara. Sara loved to watch her favorite toy felt in her dog. The kids would watch her hands play and have fun together.
+One sunny day, Sara's friend Tom saw a fish. She told Tom to watch the fish toy. It was fun to freeze and bridge. The fish wanted to show her friends how to eat it. Sara tried to fish the kids, but they could not.
+Sara was still sad. She wanted to help him. She asked her friend, Tom, "Can you help me?" Tom said, "Yes, it is wet!"
+Sara let out the toy until Tom was able to show the kids. They were happy. She said, "Yes, right, that was a fun game. You have to be brave." She came out and put a big smile, and Bob liked the pattern in her hands.
+<|endoftext|>
+Once upon a time, there was a little fish. The fish lived in
+---------------
+
+Sam had tried to sleep. He told Sam, "I will sleep. Please stop punish me." Sam felt sad, but he still leaned his eyes. They wished they had not bury sleeping. But then, they saw that the sun was not high. Tim said, "The sun will be friends."
+Sam and Sam were happy. They played together and had a lot of fun. They had so much fun in the sun. The sun was happy to have and enjoyed the sun with TV and Sam. They knew they would have something to respect their friends and they had to do it.
+<|endoftext|>
+
+Binky was so excited. He had a big mouth. It was a very pretty brave game. He was a very prince. He had fun everything he wanted. He wanted to take it away from it.
+Binky said to his mom, "Some game, Binky, from you two designer!"
+His mom and dad went the store. They did not want to gain something to hold their paw. They ran and jumped on the chest. Then, they saw a group of cheese. It was filthy filthy liked them a treasure. Tim's mom was shy and said, "She has so much for a good idea. You
+---------------
+
+<|endoftext|>
+Once upon a time, there was a little girl named Sue. She had a big seed. In the sea, she was very upset. One day, she wanted to see what was it was. She saw something like a lion so much. She asked her mom, "Mom, dad, come in." Her mom said, "Mom, we made a new day."
+Sue gave her dad a kiss. She ate the cake and went to wear the day. At the end of the day, she saw some scissors and danger them. She wore rocks and put it in the corner. He wanted to make more smoke with a new way home.
+<|endoftext|>
+Once upon a time, there was a big tiger. The tiger was very happy and lived in a big sea. They would always play and have fun together.
+One day, the tiger found a big tree. The tiger wanted to help the tiger fly fast. The tiger was foolish in the water. The tiger was so happy. It looked at the figer and one fell. The tiger felt good at the pond and thanked the tree.
+The tiger was no longer tiger. The tiger was able to take a nap up hill. The tiger lived happily ever after.
+<|end
+---------------
+
+<|endoftext|>
+Once upon a time, in a small house, lived a boy named Tim lived near a small house. The small boy loved to play and run all day long.
+One day, Tim and his friends decided to play a game. They wanted to play and see near the big tree. The small boy was so happy and thanked Mimi for her. Mimi felt good about he's best adventurous because they were not longer small to remember the big game for Sam.
+<|endoftext|>
+One day, a big boat was eager to visit. He wanted to play with his ball outside with his new toy bear. But when he got there, he knew it was blue and vieold.
+Tim went to his dad, and said, "Tim, I want to play with you!" His dad tried to watch him flying, but he was too shy. Then, he stopped still to play with where he had so much. Tim was so happy, and he kept running around the ball, laughing and cheering.
+<|endoftext|>
+
+
+Lila liked to play with her toys. She had a big hat and a big cardboard. She had a big storm that she liked to share her toys with her friends. S
+---------------
+
+Sam and Max went to the park to the picnic place. They brought more pictures fast. Tom was happy to have his friends again. They played together and swam together.
+<|endoftext|>
+
+Namy was a playful girl named Lily. She had a lot of medicine that she was very old. She always wanted to play with her friends in the woods.
+One day, while playing with her dolls in the big grass. All her friends saw her friends on the slide. They all laughed and clapped for her head. They all wanted to make them happy again.
+When the huge turned, they started to pray. Amy laughed. He laughed and clapped her hands. The next day, Amy and her friends had a fun pair of ice cream. When they were done, the turtle was happy. Amy and her friends were happy that they could not play with anything.
+<|endoftext|>
+Once upon a time, there was a little girl named Mia. Mia loved to sit and play with her mom and dad. Mia would watch and play all day long. One day, she found a big, round circle on the ground.
+Mia started to r
+---------------

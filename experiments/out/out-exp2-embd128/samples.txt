@@ -1,0 +1,60 @@
+Overriding: out_dir = out-exp2-embd128
+Overriding: device = mps
+Overriding: dtype = float16
+Overriding: max_new_tokens = 1000
+Overriding: num_samples = 5
+number of parameters: 1.21M
+Loading meta from data/tinystories/meta.pkl...
+
+Ben missed his mom: "We love to play with me there and be a good place."
+Lily and her mom laughed and said, "Yes, please!" they all played together all day softly and laughed and had fun. And they all lived happily ever after.
+<|endoftext|>
+
+
+Tom and Sam are twins. They kind, they see a cabinet on the food. The cabinets is very big and sees they read they understood. Tom and Sam set on the cabinet and Tom and Ben. They drop the caber it and smooter.
+"Look, Tom, looks! They are painting our cabins!" Tom says. He cares them and let Tom and Ben them come out of their house. They think they have a good time. They hug their time and are happy.
+<|endoftext|>
+Once upon a time, there was a good friend. They were waited for a watching for the family. The forest was only and always wanted to make new friends. They went to the forest with their friends. They would sit and love to play with their toys. They had a fun day at the forest and share their food.
+<|endoftext|>
+Once upon a time, a boy nam
+---------------
+
+Sam had to put on her other coats with coats on it. Sam was very upset. He had to show it to his friends and play with his brains. He would watch it and show his coats around Jack.
+One day, Sam's friends went to the park. They were very scared. But they all looked at each other. A big hug and a big smile. Sam felt very upset. He saw a big on the ground and wanted to see who could only. He was glad that she could see it was hard so part of her friends.
+One day, something unexpected happened. A big big wind came and came across a bird. The bird was not longer anymore. The bird was very happy to help. The bird liked to play in the park so the other bird far.
+The bird flew away, and the bird flew back to the girl and asked if he could try to play. The bird said he was very happy. The bird said, "Thank you, please!" The bird and the bird became friends, and the bird played all day long. They knew the bird was okay, and the bird treats flew away faster.
+<|endoftext|>
+Once upon a time, in a b
+---------------
+
+<|endoftext|>
+Once upon a time, there was a little girl named Mia. She had a big seeds of animals to her show. Suddenly, Mia heard a ugly sound. She was so happy that she saw something new friend.
+She hugged them and said, "It will looks lose and colors. Are you old always make a mess. We can still go on there." The little girl was very excited. She was so happy that she got collect and still became a great place of prize.
+<|endoftext|>
+One
+Once upon a time, there was a little girl named Lily. She loved to play in the woods and make a sunny rain. Every day, she would pick up the rain and play with her arms in her hands. One day, she went to the park with her mom, friend, a little girl. They played all day and shared the rain with the village.
+The little girl and her mom had a great time. They all were happy to keep the rain again from the rain and thanked Mom. They had lots of fun together again and having fun together.
+<|endoftext|>
+Once upon a time, in a small house, there lived a li
+---------------
+
+<|endoftext|>
+Once upon a time, in a small house, there was a big hat named Tom. Tom had a big house that he loved to play. One day, he felt a tired with a few music of colourful. He wanted to make a big swing.
+Tom saw a little girl named Lucy. Lucy said, "No, Tom, what are you doing?" Lucy said, "Yes, you can!" They played all day, really day.
+The number was not longer swinging anymore. Suddenly, a big, black boy named Tom saw Sue's red ball in the big wave. Tom thought the ball was full of too much. He thought about it mad to punish it.
+Tom came back to his red ball. But one day, it was time to go an adventure. The ball did not see the red ball. Tom was happy. He wanted to see the red ball back.
+Tom asked his friend, the ball, who came out of the red ball. They put the red ball in the yard. The ball made the ball man builly. Tom and Ben were happy. They all had a good that they were best friends.
+<|endoftext|>
+
+
+Ben and Lily were playing in the park. They had a big book full of pillo
+---------------
+
+One day, the cat saw a big box of things. The box was sad because it could not wait for a little bird. The cat was so happy that they all played together.
+The moral of the story is that we love you and can find it.
+<|endoftext|>
+Once upon a time, in a small house, lived a little girl named Amy. Amy loved to sing with her favorite toys. One day, at the girl and her mom went to the park. Amy's mom told her about the story of the midde, "We have to get the midde better."
+Amy found the little girl, and they were all singing and happy. The girl said, "Thank you, Listen. I can help you, First come for you." Amy and her mom were very sad. They cried and threw the girl was ready.
+First that day, Listen thought something happened. She went for a walk with a dress. Amy and her dressert. They had a big cave. Amy was very happy. The people cat saw many kids. She showed it to her dress. They were having fun.
+The next day, Lisa saw the kids playing outside. They were a happy dress at the park. They 
+---------------

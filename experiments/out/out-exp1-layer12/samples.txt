@@ -1,0 +1,58 @@
+Overriding: out_dir = out-exp1-layer12
+Overriding: device = mps
+Overriding: dtype = float16
+Overriding: max_new_tokens = 1000
+Overriding: num_samples = 5
+number of parameters: 9.50M
+Loading meta from data/tinystories/meta.pkl...
+
+Ben and Lily were playing with a band-aid on the flower and the band-aidbox. They crashed the ball.
+"We did it!" Lily said. "We did it!"
+"Yes, it went!" Ben and Lily said.
+They ran to the band and looked at the cardball they had seen the room and the cardball. They smiled and ran away. They were happy.
+"Thank you, Lily. You are a good man," Ben said. He gave them a treat. He said sorry to them and gave them some cookies.
+"Ben, this is the room. You are still a dog. This cookies are delicious. It wants to keep you safe from our cookies." Lily said.
+"Yes, this is a magic cookies. It is snacks and tidy they can. It is fun to shine and make music. Look, mom, I made a cookies. She took some medicines and pretty cookies. She took a steps and put them in the puddle too."
+Ben looked at Mom and Lily. He saw a man with a strawberry. He was his mom. He had a strong cake. He put on his shoes and said, "Mom, there is a strawberry. It is shiny and has a strawberry."
+His mom said, "That's a real stra
+---------------
+
+Sam had truck in his garden and It was cold and dark. He was so punished his arms so hard that he had been deal. He was so proud of himself when he saw the tall truck again.
+<|endoftext|>
+Once upon a time, there was a beautiful cat named Tom. Tom lived in a small house with a colorful hole in it. Tom loved to fix things and play in the hole in the water.
+One day, Tom saw a big cat outside his window. The cat was sad because it was lost in the hole. He wanted to help the cat, so he said, "I'm sorry. I was brave and wise. I am sorry."
+Tom was angry. He looked at the cat and said, "Don't be scared, and I will help you." The cat and Tom stopped too. They picked the cat and took the cat to the sink.
+The cat felt bad for Tom. The cat said, "I think you are scary. I have no cat. Let me ask you." Tom and the cat left the cat and shined it on the cat's feet. They said they had a bad ending too. They went to the desk and they found a beautiful cat in a statue.
+Just then, a big wind came and took
+---------------
+
+<|endoftext|>
+Once upon a time, there was a little girl named Sue. Sue had a big sheet. She liked to play in her small pond and look up. One day, Sue went to the park with her best friend, Tom. They played and laughed with a ball.
+At the park, they saw a big park. Tom said, "Let's play a game!" Sue agreed, and they started to play with the ball. They had so much fun. Sue was very happy.
+As they played, they saw a big rock. Sue and Tom got s
+"Look!" said Tom. "We can make a ball for a nice cat!" Sue smiled and said, "Yes, let's bury it!"
+After playing for a while, Sue and Tom went into a big tree. They went into the tree and found a big box in the tree. They thought it would be a good place to make a nice ball for the cat and the smoke. Tom said, "I want this box, but don't give it to anyone!"
+Sue was sad but began to get a nice ball again. She walked away with the big red ball as he walked again and again.
+Suddenly, Tom felt angry and sad. He tried to help his mom get the ball from the
+---------------
+
+Once upon a time, there was a fair little dog named Tim. Tim loved to strike the rock everywhere. One sunny day, Tim went to the park to play outside.
+At the park, Tim met a new friend named Sam. Sam said, "Tim, I like your rock too. Can I have a surprise, please?" Tim said, "Yes, you can have it."
+Tim and Sam played on the sun and had lots of fun. They laughed and were very happy. Then, Sam's mom called Sam and said, "Let's go to the sea, Tim. It will have them to see."
+As they walked through the store, they heard a big monster coming from the sky. The monster saw them and said, "Why are you worried? Why are you fighting this sea for them?" Tim and Sam were very happy and played with the sea and had lots of fun.
+Then, the monster said to the monster said, "We must be part of the right thing we learn to be friends too." Sam and Tim played together in the yard all day. They had lots of fun that they could sail together and had lots of fun.
+<|endoftext|>
+Once upon a time, there was a lit
+---------------
+
+One day, the cat saw a big box of toys on the ground. The cat was very happy and started to play with the toys. The cat played with the toys all day. The cat had a fun day at the park.
+<|endoftext|>
+Once upon a time, there was a pretty bug. The bug liked to solve his things with their toys. One day, the bug saw a big rain in the forest she wanted. The bug was scared. It wanted to get help.
+The bug was scared. It knew it was the key to help the bug. The kids tried to get the bug, but it was too hard. The bug ran away to get the bug for the bug.
+In the end, the short bug was broken. The bug's friends were very sad. Then, the bug said, "You cannot jump the bug there!" So the kids did not get the bug back. They tried and tried again. The bug got the bug back. The bug was happy to be free again.
+<|endoftext|>
+
+
+Tom and Sue are friends. They like to play in the park. They have a big test. They want to see who can win.
+One day, there is a note on the ground. It is a bee holding a sight. The b
+---------------

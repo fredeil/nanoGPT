@@ -1,0 +1,56 @@
+Overriding: out_dir = out-exp2-embd384
+Overriding: device = mps
+Overriding: dtype = float16
+Overriding: max_new_tokens = 1000
+Overriding: num_samples = 5
+number of parameters: 10.71M
+Loading meta from data/tinystories/meta.pkl...
+
+Ben and Mia like to watch the ball. They see many flowers and make toasts. Ben likes toasts and helps them get ready to try the toast. Mia is very happy. She wants to show them her toast.
+"Can we be friends?" Ben asks.
+"Sure, honest. Let's watch the toast," Mia says.
+They run to the bench and run to the toast. They make soup to be careful and be ready to hurt them. They make soup for the toast and gave it a slice.
+"I should have listened to mom," Ben says.
+They look at the toast and then are ready to use. They are so proud of the bench and the toast. They share it and turn. They say, "You are a good teacher, boys. I pick a piece of many toast. Do you want to play with me?"
+Mom laughs. She is happy too. She says, "Yes, you can play with me. But you have to be careful when you make the toast. I need to make a show toast. And if you play with each other, you might hurt yourself."
+Ben and Lily nod. They wanted to make a show. They say, "No, thank you."
+They go back to their room. They rais
+---------------
+
+Sam had tripped and stopped the rock too. He fell asleep, but he understood he was sorry forever. He felt angry because he wanted to play again.
+They started to fight and sing a lot. They saw the rock in the cage behind. They said sorry, but no one can be pretty again. They didn't want to go.
+The other kids were sad and angry. They did not want to play with the rock. They decided to have a tea parties and a tea car. They gave the rock to the lively table and said, "You are very nice, little cars. I like to help you make a big design."
+The little table was happy to hear the sun melt. They said, "Yay! We have to learn about the sun today!" The little table said, "Me too!"
+After the sun peeked, the sun was setting in the pond, and it was safe in the whole world. The table was so big that it started to have fun. But then, something unexpected happened!
+A little bird flew down from the pond and saw the table. The bird was hungry, but it flew back to its nest high in the sky. It tasted so ba
+---------------
+
+<|endoftext|>
+Once upon a time, there was a little girl named Sue. She had a big smiley dog named Max. They were playing in the park with their smiles. Sue loved to swim, so she would run and jump.
+As they played with the small dog and Max ran to catch it. Max said, "Look, I have the small dog!" Sue was so happy to see the small dog swimming. But Max was stuck in a small town. Max could not reach the small dog anymore. Max and Max learned the new toy that being kind and sharing is caring.
+<|endoftext|>
+
+
+Tom and Anna liked to write in their bag. They wrote about their imagination and said "Mand I wRiver". They all liked to write and play together.
+One day, they played outside with a big truck. They ran and had fun. But they could not find their truck. They were sad. They went outside and found a big log. They wondered what it was for. They wanted to play with their toys.
+"Mia, what are you doing with that?" Ben asked.
+"I don't know, mom. Maybe they are disgusting. Maybe it will be fun 
+---------------
+
+Once upon a time, there was a fair frog. The frog lived in a big house. The cat liked to jump and play.
+One day, the fair wanted to be friends. So, the frog jumped out of the house and started to bark. The fair did not split in the play. The cat jumped in the house with the fair handle.
+The fair was sad and not his fair was free. The fair said, "Meow, be first." The fair barked and shook his head. The cat was sad. The fair had an idea. "Don't worry, cat. I will help you." he said. They pushed the fair with the nail and tried to fix it.
+The cat got back in his pocket and freed the fair. The fair was very happy. He did not caught the cat. The cat and the dog were friends. They were grateful. They had fun. They thanked the cat for the help. The fair was happy to have met again. They played together again and had a great time.
+<|endoftext|>
+One day, a little girl named Lily went to the park. She saw a big pool in the water. She wanted to go on an adventure to see what was on the other side
+---------------
+
+One day, the cat saw a big box outside the park. The cat was very excited to eat it. The cat used its beak to open the box. The cat was very happy, and the cat gave the box to the cat. The cat was happy to find its mom and dad!
+But then, something unexpected happened. The cat turned into a happy plan. Later, the cat found its mom told her not to tease it. The plan was sad, but the cat said, "Now you can play with the happy plan." The cat had a friend named Sam. They played together all day long, and they had a lot of fun.
+<|endoftext|>
+
+Once upon a time there was a small and sulprise. The sunflower was so sunny. His name was Sam and he was so strong that he didn't have to upset the sun.
+He couldn't believe it before. He was getting louder and so scared that he had found it! He thought it was an eagle and said, "I can help make it!"
+The sunflower laughed and said, "Yes, it won! I want to be a brave girl. Can I help you?" The raven smiled and thought it was a good idea.
+They started play
+---------------

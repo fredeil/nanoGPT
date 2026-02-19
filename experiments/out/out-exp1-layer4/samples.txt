@@ -1,0 +1,53 @@
+Overriding: out_dir = out-exp1-layer4
+Overriding: device = mps
+Overriding: dtype = float16
+Overriding: max_new_tokens = 1000
+Overriding: num_samples = 5
+number of parameters: 3.21M
+Loading meta from data/tinystories/meta.pkl...
+
+Ben missed the dog away. He did not want to go or fast because it was already. He grabbed the dog and carried Tom at the party.
+"Can you help us?" Lily asked.
+Tom nodded and walked to the dog. He said, "No, dog. You are not safe. You need to go to your room."
+Lily barked and wagged her tail. She was happy. She said, "Thank you, Tom. You are very kind to your friend."
+Tom and Lily did not listen. They listened to their friends. They also had a great time. In the end, they all agreed to count and see their friend bark in the shop. They also learned that saying they can look magic.
+<|endoftext|>
+Once upon a time, there was a little girl named Lucy. She was very polite and loved to play outside. One day, she went outside to play. She saw her friend Tim, who was playing with a ball. Tim wanted to see what was inside.
+Lucy went to her friend, Tim. They played together in the park. They told their friends, "Let's see what is inside." Tim said, "Yes, we need to find a new home." Lucy and Tim f
+---------------
+
+Sam had a special lesson that she couldn't find it. He was still understanding. He was very excited to take his book care of the lesson.
+The moral of this story is that it is important to take care of it and careful to eat in such and know that it's how all are not free.
+<|endoftext|>
+Once upon a time, there was a boy named Tim. Tim loved to play with his toy bear. One day, he went to the park with his best friend, a little girl named Sue. Sue was very excited because her toy bear had a fun day.
+While Tim was playing, he saw a big surprise. It was a little world who was going to the surprise. He asked his mom, "Can I play with the surprise?" His bear said, "Yes, let's climb the surprise together!"
+They found the surprise together and ate it all of it. They thanked the surprise and climbed into the surprise. They both had a great time together.
+<|endoftext|>
+Once upon a time, there was a kind girl named Lily. She had a tiny girl named Lily. Lily loved to help her mom in the kitchen. One
+---------------
+
+<|endoftext|>
+Once upon a time, there was a little girl named Sue. Sue had a big smiley family. She liked to watch the pole and play with her friends.
+One day, Sue found a big box. There were big box in the garden. Sue was very happy. She wanted to go on it, but Sue didn't know who to go on. She tried to clean the box and find more bowls.
+Sue's mom came into the kitchen, and Sue looked at the box. Sue was sad. She said, "I don't know, Sue. I want to eat it." Sue held the bowls tightly and got the bowl. Sue felt bad for breakfast. They said, "I will stay with you, but you should always be patient." Sue and Sue laughed and played all day.
+<|endoftext|>
+One day, a pretty cat named Tom went to play in the sand. He liked to find things to put them in the sandwich, water, and his face. Tom and Sue wanted to play with the cat. They looked around and saw a ball. Tom and Sue were very surprised. They looked around the house for their treasure. They saw the ball and thought it was fun to play wi
+---------------
+
+Once upon a time, there was a fairy saw little girl named Sue. Sue loved to play with her toys. One sunny day, Sue went to the park to play.
+As Sue played with her toys, she saw a big book on the ground. She picked up her toys and put it back in her pocket. The book had a big stick! Sue was surprised! She knew the book was happy to see her book.
+Sue thanked Sue and went home. When they went back home, they all became the best of friends. From that day on, Tim and Sue became good friends. They played and talked nicely together. They learned that even the book can make them even maily together.
+<|endoftext|>
+Once upon a time, in a small town, there was a brought looked like a little bird. The little bird was a tall girl who liked to play with her new friend, a little bird named Remy. They liked to play together and have fun.
+But the little bird did not stop at the little bird. Remy and the little bird became friends. They lived together in a big house. Remy was happy and surprised. The b
+---------------
+
+"Look, Lily!" said her mom. "You can improve me there for you go around and see without a little bird!"
+Lily was so surprised! She said, "A bird! It's cold cold!"
+The bird said, "No, it melts. You have to clean it when I want."
+Lily tried to release from under him and the bird. She was not happy. She hugged her cold coat, and they both shared their coats. They became good friends. And from that day, they both played together every day.
+<|endoftext|>
+Once upon a time, there was a little girl named Lily. She liked to play outside with her brother dolls. One day, Lily went to the park with her paws.
+At the park, Lily saw a big tree. She wanted to find a way to the park. She walked to the park with her family. It was a flexible day with a smile.
+Lily was so happy that she could share and learn how the big tree. She was scared and ran to her, but she laughed and said goodbye. Mommy was very angry and sad. She looked for her car from the tree every day after all. She was strong and her frien
+---------------

@@ -1,0 +1,594 @@
+Overriding config with config/exp2_width.py:
+# Experiment 2 - Width sweep
+# Vary: n_embd ∈ {128, 192, 256, 384}
+# Fixed: n_layer = 6, n_head = 8, dropout = 0.0
+
+out_dir = 'out-exp2-width'
+eval_interval = 250
+eval_iters = 200
+log_interval = 10
+
+always_save_checkpoint = False
+
+wandb_log = False
+wandb_project = 'tinystories'
+wandb_run_name = 'exp2-width'
+
+dataset = 'tinystories'
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 256
+
+# baby GPT model
+n_layer = 6
+n_head = 8
+n_embd = 256  # overridden via command line
+dropout = 0.0
+
+learning_rate = 1e-3
+max_iters = 5000
+lr_decay_iters = 5000
+min_lr = 1e-4
+beta2 = 0.99
+
+warmup_iters = 100
+
+device = 'mps'
+compile = False
+
+Overriding: out_dir = out-exp2-embd192
+Overriding: n_embd = 192
+Overriding: wandb_run_name = exp2-embd192
+tokens per iteration will be: 16,384
+found vocab_size = 228 (inside data/tinystories/meta.pkl)
+Initializing a new model from scratch
+number of parameters: 2.70M
+/Users/fredrik/Developer/uit/nanoGPT/train.py:196: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+/Users/fredrik/Developer/uit/nanoGPT/.venv/lib/python3.12/site-packages/torch/cuda/amp/grad_scaler.py:31: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  super().__init__(
+num decayed parameter tensors: 26, with 2,747,136 parameters
+num non-decayed parameter tensors: 13, with 2,496 parameters
+using fused AdamW: False
+step 0: train loss 5.4566, val loss 5.4568
+iter 0: loss 5.4540, time 29577.25ms, mfu -100.00%
+iter 10: loss 4.4082, time 204.88ms, mfu 0.51%
+iter 20: loss 3.8763, time 207.51ms, mfu 0.51%
+iter 30: loss 3.3484, time 202.99ms, mfu 0.51%
+iter 40: loss 2.9101, time 205.98ms, mfu 0.51%
+iter 50: loss 2.6077, time 209.60ms, mfu 0.50%
+iter 60: loss 2.5200, time 204.15ms, mfu 0.50%
+iter 70: loss 2.4022, time 207.22ms, mfu 0.50%
+iter 80: loss 2.3713, time 210.88ms, mfu 0.50%
+iter 90: loss 2.3224, time 208.24ms, mfu 0.50%
+iter 100: loss 2.3089, time 209.17ms, mfu 0.50%
+iter 110: loss 2.2953, time 205.66ms, mfu 0.50%
+iter 120: loss 2.2504, time 204.10ms, mfu 0.50%
+iter 130: loss 2.2219, time 204.04ms, mfu 0.50%
+iter 140: loss 2.1823, time 204.39ms, mfu 0.50%
+iter 150: loss 2.1913, time 205.81ms, mfu 0.50%
+iter 160: loss 2.1461, time 206.32ms, mfu 0.50%
+iter 170: loss 2.0813, time 197.54ms, mfu 0.51%
+iter 180: loss 2.0808, time 196.21ms, mfu 0.51%
+iter 190: loss 2.0525, time 195.43ms, mfu 0.51%
+iter 200: loss 1.9868, time 197.09ms, mfu 0.51%
+iter 210: loss 1.9858, time 195.10ms, mfu 0.51%
+iter 220: loss 1.9586, time 197.17ms, mfu 0.51%
+iter 230: loss 1.8974, time 194.26ms, mfu 0.52%
+iter 240: loss 1.8563, time 193.93ms, mfu 0.52%
+step 250: train loss 1.8484, val loss 1.8467
+saving checkpoint to out-exp2-embd192
+iter 250: loss 1.8714, time 28584.81ms, mfu 0.47%
+iter 260: loss 1.8242, time 197.77ms, mfu 0.47%
+iter 270: loss 1.7762, time 197.81ms, mfu 0.48%
+iter 280: loss 1.7470, time 197.80ms, mfu 0.48%
+iter 290: loss 1.6955, time 197.99ms, mfu 0.49%
+iter 300: loss 1.6385, time 197.60ms, mfu 0.49%
+iter 310: loss 1.6541, time 196.29ms, mfu 0.49%
+iter 320: loss 1.6022, time 196.07ms, mfu 0.50%
+iter 330: loss 1.5411, time 196.87ms, mfu 0.50%
+iter 340: loss 1.5020, time 199.32ms, mfu 0.50%
+iter 350: loss 1.5038, time 199.24ms, mfu 0.50%
+iter 360: loss 1.4627, time 195.75ms, mfu 0.51%
+iter 370: loss 1.4428, time 196.30ms, mfu 0.51%
+iter 380: loss 1.4508, time 196.11ms, mfu 0.51%
+iter 390: loss 1.3413, time 197.57ms, mfu 0.51%
+iter 400: loss 1.3535, time 195.70ms, mfu 0.51%
+iter 410: loss 1.2988, time 195.63ms, mfu 0.52%
+iter 420: loss 1.3320, time 195.66ms, mfu 0.52%
+iter 430: loss 1.3331, time 196.29ms, mfu 0.52%
+iter 440: loss 1.3153, time 195.49ms, mfu 0.52%
+iter 450: loss 1.2880, time 204.55ms, mfu 0.52%
+iter 460: loss 1.2987, time 198.38ms, mfu 0.52%
+iter 470: loss 1.2656, time 202.62ms, mfu 0.52%
+iter 480: loss 1.3105, time 199.65ms, mfu 0.52%
+iter 490: loss 1.2077, time 197.51ms, mfu 0.52%
+step 500: train loss 1.2232, val loss 1.2234
+saving checkpoint to out-exp2-embd192
+iter 500: loss 1.2461, time 28664.89ms, mfu 0.47%
+iter 510: loss 1.1971, time 199.24ms, mfu 0.47%
+iter 520: loss 1.1821, time 198.77ms, mfu 0.48%
+iter 530: loss 1.1521, time 196.87ms, mfu 0.48%
+iter 540: loss 1.1991, time 199.79ms, mfu 0.49%
+iter 550: loss 1.1746, time 202.45ms, mfu 0.49%
+iter 560: loss 1.1611, time 203.38ms, mfu 0.49%
+iter 570: loss 1.1554, time 201.81ms, mfu 0.49%
+iter 580: loss 1.1163, time 201.22ms, mfu 0.50%
+iter 590: loss 1.1509, time 200.00ms, mfu 0.50%
+iter 600: loss 1.1259, time 198.17ms, mfu 0.50%
+iter 610: loss 1.0665, time 198.18ms, mfu 0.50%
+iter 620: loss 1.0384, time 197.97ms, mfu 0.50%
+iter 630: loss 1.0806, time 197.62ms, mfu 0.51%
+iter 640: loss 1.0293, time 200.65ms, mfu 0.51%
+iter 650: loss 1.0589, time 197.08ms, mfu 0.51%
+iter 660: loss 1.0870, time 198.49ms, mfu 0.51%
+iter 670: loss 1.0448, time 198.40ms, mfu 0.51%
+iter 680: loss 1.0269, time 194.10ms, mfu 0.51%
+iter 690: loss 1.0621, time 196.26ms, mfu 0.52%
+iter 700: loss 1.0729, time 196.36ms, mfu 0.52%
+iter 710: loss 1.0366, time 197.22ms, mfu 0.52%
+iter 720: loss 1.0494, time 194.63ms, mfu 0.52%
+iter 730: loss 1.0119, time 193.14ms, mfu 0.52%
+iter 740: loss 1.0365, time 195.74ms, mfu 0.52%
+step 750: train loss 1.0225, val loss 1.0230
+saving checkpoint to out-exp2-embd192
+iter 750: loss 1.0365, time 28875.86ms, mfu 0.47%
+iter 760: loss 1.0292, time 199.64ms, mfu 0.47%
+iter 770: loss 0.9761, time 198.89ms, mfu 0.48%
+iter 780: loss 1.0299, time 201.71ms, mfu 0.48%
+iter 790: loss 1.0415, time 196.19ms, mfu 0.49%
+iter 800: loss 0.9783, time 197.04ms, mfu 0.49%
+iter 810: loss 0.9800, time 199.27ms, mfu 0.49%
+iter 820: loss 0.9772, time 220.61ms, mfu 0.49%
+iter 830: loss 1.0019, time 216.10ms, mfu 0.49%
+iter 840: loss 0.9776, time 212.90ms, mfu 0.49%
+iter 850: loss 0.9874, time 208.34ms, mfu 0.49%
+iter 860: loss 1.0002, time 210.50ms, mfu 0.49%
+iter 870: loss 1.0120, time 210.71ms, mfu 0.49%
+iter 880: loss 0.9498, time 213.16ms, mfu 0.49%
+iter 890: loss 0.9447, time 212.97ms, mfu 0.49%
+iter 900: loss 0.9957, time 212.00ms, mfu 0.49%
+iter 910: loss 0.9559, time 215.33ms, mfu 0.49%
+iter 920: loss 0.9579, time 211.05ms, mfu 0.49%
+iter 930: loss 1.0169, time 209.99ms, mfu 0.49%
+iter 940: loss 0.9740, time 212.24ms, mfu 0.49%
+iter 950: loss 0.9189, time 217.89ms, mfu 0.49%
+iter 960: loss 0.9226, time 213.34ms, mfu 0.49%
+iter 970: loss 0.9179, time 210.65ms, mfu 0.49%
+iter 980: loss 0.9170, time 212.70ms, mfu 0.49%
+iter 990: loss 0.9144, time 215.33ms, mfu 0.49%
+step 1000: train loss 0.9222, val loss 0.9237
+saving checkpoint to out-exp2-embd192
+iter 1000: loss 0.9432, time 30695.03ms, mfu 0.44%
+iter 1010: loss 0.9124, time 200.19ms, mfu 0.45%
+iter 1020: loss 0.9455, time 198.00ms, mfu 0.45%
+iter 1030: loss 0.9069, time 204.83ms, mfu 0.46%
+iter 1040: loss 0.9264, time 205.14ms, mfu 0.46%
+iter 1050: loss 0.9322, time 206.66ms, mfu 0.47%
+iter 1060: loss 0.8907, time 201.66ms, mfu 0.47%
+iter 1070: loss 0.9004, time 205.45ms, mfu 0.48%
+iter 1080: loss 0.8710, time 202.29ms, mfu 0.48%
+iter 1090: loss 0.9056, time 203.53ms, mfu 0.48%
+iter 1100: loss 0.9142, time 206.16ms, mfu 0.48%
+iter 1110: loss 0.9064, time 199.56ms, mfu 0.49%
+iter 1120: loss 0.9073, time 204.17ms, mfu 0.49%
+iter 1130: loss 0.8899, time 202.32ms, mfu 0.49%
+iter 1140: loss 0.8649, time 200.84ms, mfu 0.49%
+iter 1150: loss 0.8887, time 202.83ms, mfu 0.50%
+iter 1160: loss 0.8616, time 200.58ms, mfu 0.50%
+iter 1170: loss 0.8967, time 197.59ms, mfu 0.50%
+iter 1180: loss 0.8521, time 200.42ms, mfu 0.50%
+iter 1190: loss 0.8499, time 200.94ms, mfu 0.50%
+iter 1200: loss 0.9047, time 205.96ms, mfu 0.50%
+iter 1210: loss 0.9150, time 200.10ms, mfu 0.51%
+iter 1220: loss 0.8338, time 199.31ms, mfu 0.51%
+iter 1230: loss 0.8752, time 199.63ms, mfu 0.51%
+iter 1240: loss 0.8668, time 201.70ms, mfu 0.51%
+step 1250: train loss 0.8655, val loss 0.8657
+saving checkpoint to out-exp2-embd192
+iter 1250: loss 0.8626, time 30128.59ms, mfu 0.46%
+iter 1260: loss 0.8497, time 210.30ms, mfu 0.46%
+iter 1270: loss 0.8963, time 209.38ms, mfu 0.46%
+iter 1280: loss 0.8470, time 210.29ms, mfu 0.47%
+iter 1290: loss 0.8548, time 214.30ms, mfu 0.47%
+iter 1300: loss 0.8383, time 214.38ms, mfu 0.47%
+iter 1310: loss 0.8486, time 209.33ms, mfu 0.47%
+iter 1320: loss 0.8353, time 215.28ms, mfu 0.47%
+iter 1330: loss 0.8072, time 214.08ms, mfu 0.48%
+iter 1340: loss 0.8270, time 210.06ms, mfu 0.48%
+iter 1350: loss 0.8539, time 211.92ms, mfu 0.48%
+iter 1360: loss 0.8642, time 207.17ms, mfu 0.48%
+iter 1370: loss 0.8193, time 214.42ms, mfu 0.48%
+iter 1380: loss 0.8542, time 217.33ms, mfu 0.48%
+iter 1390: loss 0.8278, time 214.99ms, mfu 0.48%
+iter 1400: loss 0.7679, time 215.77ms, mfu 0.48%
+iter 1410: loss 0.8344, time 213.76ms, mfu 0.48%
+iter 1420: loss 0.7993, time 213.31ms, mfu 0.48%
+iter 1430: loss 0.8402, time 210.52ms, mfu 0.48%
+iter 1440: loss 0.8176, time 209.09ms, mfu 0.48%
+iter 1450: loss 0.8440, time 211.90ms, mfu 0.48%
+iter 1460: loss 0.8298, time 211.39ms, mfu 0.49%
+iter 1470: loss 0.8078, time 214.01ms, mfu 0.48%
+iter 1480: loss 0.8194, time 211.40ms, mfu 0.49%
+iter 1490: loss 0.8342, time 215.81ms, mfu 0.48%
+step 1500: train loss 0.8137, val loss 0.8136
+saving checkpoint to out-exp2-embd192
+iter 1500: loss 0.8007, time 30407.55ms, mfu 0.44%
+iter 1510: loss 0.7564, time 210.51ms, mfu 0.44%
+iter 1520: loss 0.7960, time 211.05ms, mfu 0.45%
+iter 1530: loss 0.7936, time 210.62ms, mfu 0.45%
+iter 1540: loss 0.8287, time 209.58ms, mfu 0.46%
+iter 1550: loss 0.7904, time 216.40ms, mfu 0.46%
+iter 1560: loss 0.7948, time 212.27ms, mfu 0.46%
+iter 1570: loss 0.8067, time 209.49ms, mfu 0.46%
+iter 1580: loss 0.7959, time 211.22ms, mfu 0.47%
+iter 1590: loss 0.8157, time 210.55ms, mfu 0.47%
+iter 1600: loss 0.8401, time 213.25ms, mfu 0.47%
+iter 1610: loss 0.7982, time 208.03ms, mfu 0.47%
+iter 1620: loss 0.7864, time 210.96ms, mfu 0.48%
+iter 1630: loss 0.7943, time 213.03ms, mfu 0.48%
+iter 1640: loss 0.7755, time 213.48ms, mfu 0.48%
+iter 1650: loss 0.8058, time 210.18ms, mfu 0.48%
+iter 1660: loss 0.8291, time 211.71ms, mfu 0.48%
+iter 1670: loss 0.8024, time 210.88ms, mfu 0.48%
+iter 1680: loss 0.7818, time 210.53ms, mfu 0.48%
+iter 1690: loss 0.8064, time 208.66ms, mfu 0.48%
+iter 1700: loss 0.8106, time 208.78ms, mfu 0.49%
+iter 1710: loss 0.8158, time 213.68ms, mfu 0.49%
+iter 1720: loss 0.7877, time 217.49ms, mfu 0.48%
+iter 1730: loss 0.7830, time 209.94ms, mfu 0.49%
+iter 1740: loss 0.8013, time 205.86ms, mfu 0.49%
+step 1750: train loss 0.7777, val loss 0.7791
+saving checkpoint to out-exp2-embd192
+iter 1750: loss 0.7927, time 30089.58ms, mfu 0.44%
+iter 1760: loss 0.8060, time 209.22ms, mfu 0.44%
+iter 1770: loss 0.7686, time 209.85ms, mfu 0.45%
+iter 1780: loss 0.7939, time 209.55ms, mfu 0.45%
+iter 1790: loss 0.7952, time 205.32ms, mfu 0.46%
+iter 1800: loss 0.7750, time 213.88ms, mfu 0.46%
+iter 1810: loss 0.7814, time 212.98ms, mfu 0.46%
+iter 1820: loss 0.7612, time 210.32ms, mfu 0.47%
+iter 1830: loss 0.7889, time 206.44ms, mfu 0.47%
+iter 1840: loss 0.7242, time 210.73ms, mfu 0.47%
+iter 1850: loss 0.7372, time 208.34ms, mfu 0.48%
+iter 1860: loss 0.7609, time 209.21ms, mfu 0.48%
+iter 1870: loss 0.7653, time 204.70ms, mfu 0.48%
+iter 1880: loss 0.7938, time 207.04ms, mfu 0.48%
+iter 1890: loss 0.7374, time 204.01ms, mfu 0.48%
+iter 1900: loss 0.7624, time 211.78ms, mfu 0.49%
+iter 1910: loss 0.7913, time 209.62ms, mfu 0.49%
+iter 1920: loss 0.7677, time 214.99ms, mfu 0.49%
+iter 1930: loss 0.7378, time 213.63ms, mfu 0.49%
+iter 1940: loss 0.7761, time 208.42ms, mfu 0.49%
+iter 1950: loss 0.7693, time 209.31ms, mfu 0.49%
+iter 1960: loss 0.7724, time 209.96ms, mfu 0.49%
+iter 1970: loss 0.7565, time 208.47ms, mfu 0.49%
+iter 1980: loss 0.7613, time 210.71ms, mfu 0.49%
+iter 1990: loss 0.7449, time 205.75ms, mfu 0.49%
+step 2000: train loss 0.7518, val loss 0.7496
+saving checkpoint to out-exp2-embd192
+iter 2000: loss 0.7353, time 30007.56ms, mfu 0.44%
+iter 2010: loss 0.7295, time 208.44ms, mfu 0.45%
+iter 2020: loss 0.7734, time 210.00ms, mfu 0.45%
+iter 2030: loss 0.7707, time 210.85ms, mfu 0.46%
+iter 2040: loss 0.7195, time 208.48ms, mfu 0.46%
+iter 2050: loss 0.7773, time 213.10ms, mfu 0.46%
+iter 2060: loss 0.7376, time 207.72ms, mfu 0.47%
+iter 2070: loss 0.7664, time 207.63ms, mfu 0.47%
+iter 2080: loss 0.7484, time 208.61ms, mfu 0.47%
+iter 2090: loss 0.8001, time 207.73ms, mfu 0.48%
+iter 2100: loss 0.7529, time 209.54ms, mfu 0.48%
+iter 2110: loss 0.7690, time 208.44ms, mfu 0.48%
+iter 2120: loss 0.7300, time 207.04ms, mfu 0.48%
+iter 2130: loss 0.7329, time 207.34ms, mfu 0.48%
+iter 2140: loss 0.7778, time 210.46ms, mfu 0.48%
+iter 2150: loss 0.7439, time 211.02ms, mfu 0.48%
+iter 2160: loss 0.7204, time 209.62ms, mfu 0.49%
+iter 2170: loss 0.7216, time 209.82ms, mfu 0.49%
+iter 2180: loss 0.7134, time 205.12ms, mfu 0.49%
+iter 2190: loss 0.7593, time 205.43ms, mfu 0.49%
+iter 2200: loss 0.7520, time 215.03ms, mfu 0.49%
+iter 2210: loss 0.7301, time 207.28ms, mfu 0.49%
+iter 2220: loss 0.7487, time 208.72ms, mfu 0.49%
+iter 2230: loss 0.7350, time 208.86ms, mfu 0.49%
+iter 2240: loss 0.7234, time 210.39ms, mfu 0.49%
+step 2250: train loss 0.7335, val loss 0.7298
+saving checkpoint to out-exp2-embd192
+iter 2250: loss 0.7600, time 29955.26ms, mfu 0.44%
+iter 2260: loss 0.7298, time 206.27ms, mfu 0.45%
+iter 2270: loss 0.7024, time 206.36ms, mfu 0.45%
+iter 2280: loss 0.7180, time 220.28ms, mfu 0.46%
+iter 2290: loss 0.7557, time 210.55ms, mfu 0.46%
+iter 2300: loss 0.7348, time 206.07ms, mfu 0.46%
+iter 2310: loss 0.7353, time 210.53ms, mfu 0.47%
+iter 2320: loss 0.7149, time 208.94ms, mfu 0.47%
+iter 2330: loss 0.7334, time 206.06ms, mfu 0.47%
+iter 2340: loss 0.7214, time 204.73ms, mfu 0.48%
+iter 2350: loss 0.7218, time 211.50ms, mfu 0.48%
+iter 2360: loss 0.7748, time 209.37ms, mfu 0.48%
+iter 2370: loss 0.6896, time 206.43ms, mfu 0.48%
+iter 2380: loss 0.7241, time 209.29ms, mfu 0.48%
+iter 2390: loss 0.7249, time 209.98ms, mfu 0.48%
+iter 2400: loss 0.6920, time 208.75ms, mfu 0.49%
+iter 2410: loss 0.7101, time 207.77ms, mfu 0.49%
+iter 2420: loss 0.7280, time 209.40ms, mfu 0.49%
+iter 2430: loss 0.7095, time 211.43ms, mfu 0.49%
+iter 2440: loss 0.7068, time 206.29ms, mfu 0.49%
+iter 2450: loss 0.7016, time 204.38ms, mfu 0.49%
+iter 2460: loss 0.7109, time 207.27ms, mfu 0.49%
+iter 2470: loss 0.7097, time 210.05ms, mfu 0.49%
+iter 2480: loss 0.7515, time 208.85ms, mfu 0.49%
+iter 2490: loss 0.7260, time 207.80ms, mfu 0.49%
+step 2500: train loss 0.7141, val loss 0.7151
+saving checkpoint to out-exp2-embd192
+iter 2500: loss 0.7410, time 29924.93ms, mfu 0.44%
+iter 2510: loss 0.7230, time 210.26ms, mfu 0.45%
+iter 2520: loss 0.6948, time 208.60ms, mfu 0.45%
+iter 2530: loss 0.6934, time 218.14ms, mfu 0.46%
+iter 2540: loss 0.7287, time 209.07ms, mfu 0.46%
+iter 2550: loss 0.6877, time 207.91ms, mfu 0.46%
+iter 2560: loss 0.7252, time 207.97ms, mfu 0.47%
+iter 2570: loss 0.7025, time 209.99ms, mfu 0.47%
+iter 2580: loss 0.7273, time 211.89ms, mfu 0.47%
+iter 2590: loss 0.7066, time 210.27ms, mfu 0.47%
+iter 2600: loss 0.6964, time 205.73ms, mfu 0.48%
+iter 2610: loss 0.7439, time 203.72ms, mfu 0.48%
+iter 2620: loss 0.7019, time 208.02ms, mfu 0.48%
+iter 2630: loss 0.7112, time 211.13ms, mfu 0.48%
+iter 2640: loss 0.7120, time 208.60ms, mfu 0.48%
+iter 2650: loss 0.6834, time 206.95ms, mfu 0.49%
+iter 2660: loss 0.6650, time 210.83ms, mfu 0.49%
+iter 2670: loss 0.7187, time 211.48ms, mfu 0.49%
+iter 2680: loss 0.7015, time 209.98ms, mfu 0.49%
+iter 2690: loss 0.7387, time 209.83ms, mfu 0.49%
+iter 2700: loss 0.7159, time 212.88ms, mfu 0.49%
+iter 2710: loss 0.7296, time 206.42ms, mfu 0.49%
+iter 2720: loss 0.7102, time 205.48ms, mfu 0.49%
+iter 2730: loss 0.6977, time 208.01ms, mfu 0.49%
+iter 2740: loss 0.7056, time 209.75ms, mfu 0.49%
+step 2750: train loss 0.7033, val loss 0.7039
+saving checkpoint to out-exp2-embd192
+iter 2750: loss 0.6994, time 30040.96ms, mfu 0.44%
+iter 2760: loss 0.7073, time 206.34ms, mfu 0.45%
+iter 2770: loss 0.7085, time 206.93ms, mfu 0.45%
+iter 2780: loss 0.7020, time 210.43ms, mfu 0.46%
+iter 2790: loss 0.7191, time 207.59ms, mfu 0.46%
+iter 2800: loss 0.6862, time 206.36ms, mfu 0.47%
+iter 2810: loss 0.7162, time 211.24ms, mfu 0.47%
+iter 2820: loss 0.6927, time 212.85ms, mfu 0.47%
+iter 2830: loss 0.6895, time 211.33ms, mfu 0.47%
+iter 2840: loss 0.7285, time 209.07ms, mfu 0.47%
+iter 2850: loss 0.6740, time 213.03ms, mfu 0.48%
+iter 2860: loss 0.7106, time 207.75ms, mfu 0.48%
+iter 2870: loss 0.6736, time 207.16ms, mfu 0.48%
+iter 2880: loss 0.6830, time 213.24ms, mfu 0.48%
+iter 2890: loss 0.6779, time 210.15ms, mfu 0.48%
+iter 2900: loss 0.7032, time 206.44ms, mfu 0.48%
+iter 2910: loss 0.6623, time 205.90ms, mfu 0.49%
+iter 2920: loss 0.7211, time 207.80ms, mfu 0.49%
+iter 2930: loss 0.6635, time 210.74ms, mfu 0.49%
+iter 2940: loss 0.7162, time 207.14ms, mfu 0.49%
+iter 2950: loss 0.6835, time 208.81ms, mfu 0.49%
+iter 2960: loss 0.6709, time 210.76ms, mfu 0.49%
+iter 2970: loss 0.6629, time 212.07ms, mfu 0.49%
+iter 2980: loss 0.6717, time 207.93ms, mfu 0.49%
+iter 2990: loss 0.6847, time 207.57ms, mfu 0.49%
+step 3000: train loss 0.6880, val loss 0.6883
+saving checkpoint to out-exp2-embd192
+iter 3000: loss 0.6793, time 29947.60ms, mfu 0.44%
+iter 3010: loss 0.6597, time 212.05ms, mfu 0.45%
+iter 3020: loss 0.7120, time 204.49ms, mfu 0.45%
+iter 3030: loss 0.6670, time 204.84ms, mfu 0.46%
+iter 3040: loss 0.6661, time 209.12ms, mfu 0.46%
+iter 3050: loss 0.6712, time 206.87ms, mfu 0.47%
+iter 3060: loss 0.7213, time 209.01ms, mfu 0.47%
+iter 3070: loss 0.7125, time 209.46ms, mfu 0.47%
+iter 3080: loss 0.6834, time 208.79ms, mfu 0.47%
+iter 3090: loss 0.6746, time 209.01ms, mfu 0.48%
+iter 3100: loss 0.6784, time 189.11ms, mfu 0.48%
+iter 3110: loss 0.6720, time 186.19ms, mfu 0.49%
+iter 3120: loss 0.6749, time 188.78ms, mfu 0.50%
+iter 3130: loss 0.6691, time 187.56ms, mfu 0.50%
+iter 3140: loss 0.6838, time 185.75ms, mfu 0.51%
+iter 3150: loss 0.7012, time 185.85ms, mfu 0.51%
+iter 3160: loss 0.6780, time 190.09ms, mfu 0.52%
+iter 3170: loss 0.6938, time 188.60ms, mfu 0.52%
+iter 3180: loss 0.6680, time 187.31ms, mfu 0.52%
+iter 3190: loss 0.6315, time 188.67ms, mfu 0.53%
+iter 3200: loss 0.6789, time 187.09ms, mfu 0.53%
+iter 3210: loss 0.6819, time 186.09ms, mfu 0.53%
+iter 3220: loss 0.6889, time 186.01ms, mfu 0.53%
+iter 3230: loss 0.6815, time 186.79ms, mfu 0.54%
+iter 3240: loss 0.6670, time 189.77ms, mfu 0.54%
+step 3250: train loss 0.6783, val loss 0.6776
+saving checkpoint to out-exp2-embd192
+iter 3250: loss 0.6887, time 27265.10ms, mfu 0.48%
+iter 3260: loss 0.6488, time 187.38ms, mfu 0.49%
+iter 3270: loss 0.6718, time 187.94ms, mfu 0.50%
+iter 3280: loss 0.6884, time 187.19ms, mfu 0.50%
+iter 3290: loss 0.6999, time 187.58ms, mfu 0.51%
+iter 3300: loss 0.6664, time 187.06ms, mfu 0.51%
+iter 3310: loss 0.6620, time 184.76ms, mfu 0.52%
+iter 3320: loss 0.6674, time 191.20ms, mfu 0.52%
+iter 3330: loss 0.6834, time 190.64ms, mfu 0.52%
+iter 3340: loss 0.6344, time 189.24ms, mfu 0.52%
+iter 3350: loss 0.6767, time 188.44ms, mfu 0.53%
+iter 3360: loss 0.6351, time 187.50ms, mfu 0.53%
+iter 3370: loss 0.6775, time 188.80ms, mfu 0.53%
+iter 3380: loss 0.6923, time 186.87ms, mfu 0.53%
+iter 3390: loss 0.6793, time 185.86ms, mfu 0.54%
+iter 3400: loss 0.6526, time 189.17ms, mfu 0.54%
+iter 3410: loss 0.7139, time 190.20ms, mfu 0.54%
+iter 3420: loss 0.6794, time 188.85ms, mfu 0.54%
+iter 3430: loss 0.6753, time 189.36ms, mfu 0.54%
+iter 3440: loss 0.6740, time 188.09ms, mfu 0.54%
+iter 3450: loss 0.7020, time 188.59ms, mfu 0.54%
+iter 3460: loss 0.6983, time 189.99ms, mfu 0.54%
+iter 3470: loss 0.6915, time 187.54ms, mfu 0.54%
+iter 3480: loss 0.6843, time 190.90ms, mfu 0.54%
+iter 3490: loss 0.6259, time 189.69ms, mfu 0.54%
+step 3500: train loss 0.6680, val loss 0.6680
+saving checkpoint to out-exp2-embd192
+iter 3500: loss 0.6811, time 27511.62ms, mfu 0.49%
+iter 3510: loss 0.6559, time 187.53ms, mfu 0.50%
+iter 3520: loss 0.6658, time 193.62ms, mfu 0.50%
+iter 3530: loss 0.6825, time 194.99ms, mfu 0.50%
+iter 3540: loss 0.6731, time 190.38ms, mfu 0.51%
+iter 3550: loss 0.6829, time 189.33ms, mfu 0.51%
+iter 3560: loss 0.6652, time 190.05ms, mfu 0.51%
+iter 3570: loss 0.6603, time 188.74ms, mfu 0.52%
+iter 3580: loss 0.6294, time 189.23ms, mfu 0.52%
+iter 3590: loss 0.6845, time 188.71ms, mfu 0.52%
+iter 3600: loss 0.6345, time 187.76ms, mfu 0.53%
+iter 3610: loss 0.7171, time 191.74ms, mfu 0.53%
+iter 3620: loss 0.6695, time 194.51ms, mfu 0.53%
+iter 3630: loss 0.6411, time 192.31ms, mfu 0.53%
+iter 3640: loss 0.6350, time 190.65ms, mfu 0.53%
+iter 3650: loss 0.6657, time 189.35ms, mfu 0.53%
+iter 3660: loss 0.6652, time 189.32ms, mfu 0.53%
+iter 3670: loss 0.6504, time 189.50ms, mfu 0.54%
+iter 3680: loss 0.6517, time 189.07ms, mfu 0.54%
+iter 3690: loss 0.6872, time 192.81ms, mfu 0.54%
+iter 3700: loss 0.6559, time 188.25ms, mfu 0.54%
+iter 3710: loss 0.6499, time 188.81ms, mfu 0.54%
+iter 3720: loss 0.6515, time 194.37ms, mfu 0.54%
+iter 3730: loss 0.6448, time 191.89ms, mfu 0.54%
+iter 3740: loss 0.6736, time 190.34ms, mfu 0.54%
+step 3750: train loss 0.6587, val loss 0.6585
+saving checkpoint to out-exp2-embd192
+iter 3750: loss 0.6823, time 27617.77ms, mfu 0.49%
+iter 3760: loss 0.6311, time 196.13ms, mfu 0.49%
+iter 3770: loss 0.6684, time 192.41ms, mfu 0.50%
+iter 3780: loss 0.6262, time 190.24ms, mfu 0.50%
+iter 3790: loss 0.6767, time 194.48ms, mfu 0.50%
+iter 3800: loss 0.6569, time 192.37ms, mfu 0.51%
+iter 3810: loss 0.6121, time 190.53ms, mfu 0.51%
+iter 3820: loss 0.6335, time 193.51ms, mfu 0.51%
+iter 3830: loss 0.6584, time 191.23ms, mfu 0.52%
+iter 3840: loss 0.6356, time 192.93ms, mfu 0.52%
+iter 3850: loss 0.6798, time 189.82ms, mfu 0.52%
+iter 3860: loss 0.6650, time 190.23ms, mfu 0.52%
+iter 3870: loss 0.6501, time 192.19ms, mfu 0.52%
+iter 3880: loss 0.6301, time 189.84ms, mfu 0.53%
+iter 3890: loss 0.6312, time 189.96ms, mfu 0.53%
+iter 3900: loss 0.6788, time 187.31ms, mfu 0.53%
+iter 3910: loss 0.6612, time 188.24ms, mfu 0.53%
+iter 3920: loss 0.6570, time 192.06ms, mfu 0.53%
+iter 3930: loss 0.6138, time 194.42ms, mfu 0.53%
+iter 3940: loss 0.6724, time 192.11ms, mfu 0.53%
+iter 3950: loss 0.6491, time 191.80ms, mfu 0.54%
+iter 3960: loss 0.6907, time 190.70ms, mfu 0.54%
+iter 3970: loss 0.6636, time 190.44ms, mfu 0.54%
+iter 3980: loss 0.6346, time 191.62ms, mfu 0.54%
+iter 3990: loss 0.6508, time 191.26ms, mfu 0.54%
+step 4000: train loss 0.6519, val loss 0.6494
+saving checkpoint to out-exp2-embd192
+iter 4000: loss 0.6310, time 27650.76ms, mfu 0.48%
+iter 4010: loss 0.6843, time 189.68ms, mfu 0.49%
+iter 4020: loss 0.6544, time 190.40ms, mfu 0.50%
+iter 4030: loss 0.6279, time 190.22ms, mfu 0.50%
+iter 4040: loss 0.6512, time 191.36ms, mfu 0.50%
+iter 4050: loss 0.6812, time 190.33ms, mfu 0.51%
+iter 4060: loss 0.6438, time 188.72ms, mfu 0.51%
+iter 4070: loss 0.6565, time 190.35ms, mfu 0.52%
+iter 4080: loss 0.6335, time 191.56ms, mfu 0.52%
+iter 4090: loss 0.6369, time 191.92ms, mfu 0.52%
+iter 4100: loss 0.6466, time 190.67ms, mfu 0.52%
+iter 4110: loss 0.6240, time 190.32ms, mfu 0.53%
+iter 4120: loss 0.6418, time 193.74ms, mfu 0.53%
+iter 4130: loss 0.6437, time 192.69ms, mfu 0.53%
+iter 4140: loss 0.6671, time 190.25ms, mfu 0.53%
+iter 4150: loss 0.6470, time 190.67ms, mfu 0.53%
+iter 4160: loss 0.6493, time 190.56ms, mfu 0.53%
+iter 4170: loss 0.6952, time 187.28ms, mfu 0.53%
+iter 4180: loss 0.6786, time 190.21ms, mfu 0.54%
+iter 4190: loss 0.6409, time 194.93ms, mfu 0.53%
+iter 4200: loss 0.6305, time 193.65ms, mfu 0.53%
+iter 4210: loss 0.6381, time 196.86ms, mfu 0.53%
+iter 4220: loss 0.6339, time 189.74ms, mfu 0.54%
+iter 4230: loss 0.6701, time 190.09ms, mfu 0.54%
+iter 4240: loss 0.6587, time 191.45ms, mfu 0.54%
+step 4250: train loss 0.6456, val loss 0.6425
+saving checkpoint to out-exp2-embd192
+iter 4250: loss 0.6452, time 27593.17ms, mfu 0.48%
+iter 4260: loss 0.6850, time 190.50ms, mfu 0.49%
+iter 4270: loss 0.6446, time 191.62ms, mfu 0.49%
+iter 4280: loss 0.6551, time 189.91ms, mfu 0.50%
+iter 4290: loss 0.6378, time 189.78ms, mfu 0.50%
+iter 4300: loss 0.6416, time 186.81ms, mfu 0.51%
+iter 4310: loss 0.6437, time 187.19ms, mfu 0.51%
+iter 4320: loss 0.6293, time 187.98ms, mfu 0.52%
+iter 4330: loss 0.6863, time 190.89ms, mfu 0.52%
+iter 4340: loss 0.6232, time 194.89ms, mfu 0.52%
+iter 4350: loss 0.6373, time 194.09ms, mfu 0.52%
+iter 4360: loss 0.6168, time 190.28ms, mfu 0.52%
+iter 4370: loss 0.6291, time 190.15ms, mfu 0.53%
+iter 4380: loss 0.6474, time 190.04ms, mfu 0.53%
+iter 4390: loss 0.6487, time 189.92ms, mfu 0.53%
+iter 4400: loss 0.6563, time 190.46ms, mfu 0.53%
+iter 4410: loss 0.6036, time 189.44ms, mfu 0.53%
+iter 4420: loss 0.6303, time 187.77ms, mfu 0.54%
+iter 4430: loss 0.6241, time 188.92ms, mfu 0.54%
+iter 4440: loss 0.6160, time 193.80ms, mfu 0.54%
+iter 4450: loss 0.6577, time 192.68ms, mfu 0.54%
+iter 4460: loss 0.6489, time 190.44ms, mfu 0.54%
+iter 4470: loss 0.6291, time 190.97ms, mfu 0.54%
+iter 4480: loss 0.6272, time 190.19ms, mfu 0.54%
+iter 4490: loss 0.5994, time 189.99ms, mfu 0.54%
+step 4500: train loss 0.6385, val loss 0.6373
+saving checkpoint to out-exp2-embd192
+iter 4500: loss 0.6161, time 27586.62ms, mfu 0.49%
+iter 4510: loss 0.6270, time 189.37ms, mfu 0.49%
+iter 4520: loss 0.6769, time 192.63ms, mfu 0.50%
+iter 4530: loss 0.6540, time 189.17ms, mfu 0.50%
+iter 4540: loss 0.5962, time 188.13ms, mfu 0.51%
+iter 4550: loss 0.6355, time 190.19ms, mfu 0.51%
+iter 4560: loss 0.6317, time 187.76ms, mfu 0.51%
+iter 4570: loss 0.6619, time 189.91ms, mfu 0.52%
+iter 4580: loss 0.6445, time 194.39ms, mfu 0.52%
+iter 4590: loss 0.6279, time 190.01ms, mfu 0.52%
+iter 4600: loss 0.5990, time 193.85ms, mfu 0.52%
+iter 4610: loss 0.6464, time 189.64ms, mfu 0.53%
+iter 4620: loss 0.6408, time 189.14ms, mfu 0.53%
+iter 4630: loss 0.6207, time 190.08ms, mfu 0.53%
+iter 4640: loss 0.6345, time 189.90ms, mfu 0.53%
+iter 4650: loss 0.6210, time 186.02ms, mfu 0.53%
+iter 4660: loss 0.6243, time 187.85ms, mfu 0.54%
+iter 4670: loss 0.6227, time 188.26ms, mfu 0.54%
+iter 4680: loss 0.6313, time 193.00ms, mfu 0.54%
+iter 4690: loss 0.6146, time 192.08ms, mfu 0.54%
+iter 4700: loss 0.6340, time 189.98ms, mfu 0.54%
+iter 4710: loss 0.6278, time 193.50ms, mfu 0.54%
+iter 4720: loss 0.6026, time 189.59ms, mfu 0.54%
+iter 4730: loss 0.6685, time 189.53ms, mfu 0.54%
+iter 4740: loss 0.6495, time 190.17ms, mfu 0.54%
+step 4750: train loss 0.6346, val loss 0.6350
+saving checkpoint to out-exp2-embd192
+iter 4750: loss 0.6621, time 27471.77ms, mfu 0.49%
+iter 4760: loss 0.6619, time 189.31ms, mfu 0.49%
+iter 4770: loss 0.6498, time 188.61ms, mfu 0.50%
+iter 4780: loss 0.6190, time 187.69ms, mfu 0.50%
+iter 4790: loss 0.6405, time 187.21ms, mfu 0.51%
+iter 4800: loss 0.6181, time 190.07ms, mfu 0.51%
+iter 4810: loss 0.6272, time 191.38ms, mfu 0.52%
+iter 4820: loss 0.6245, time 188.78ms, mfu 0.52%
+iter 4830: loss 0.6202, time 186.09ms, mfu 0.52%
+iter 4840: loss 0.6302, time 186.21ms, mfu 0.53%
+iter 4850: loss 0.6176, time 188.37ms, mfu 0.53%
+iter 4860: loss 0.6235, time 193.03ms, mfu 0.53%
+iter 4870: loss 0.6240, time 191.91ms, mfu 0.53%
+iter 4880: loss 0.6535, time 190.52ms, mfu 0.53%
+iter 4890: loss 0.5778, time 191.42ms, mfu 0.53%
+iter 4900: loss 0.6469, time 189.27ms, mfu 0.53%
+iter 4910: loss 0.5981, time 189.82ms, mfu 0.54%
+iter 4920: loss 0.6360, time 190.27ms, mfu 0.54%
+iter 4930: loss 0.6004, time 187.78ms, mfu 0.54%
+iter 4940: loss 0.5996, time 190.35ms, mfu 0.54%
+iter 4950: loss 0.6533, time 188.78ms, mfu 0.54%
+iter 4960: loss 0.6836, time 192.94ms, mfu 0.54%
+iter 4970: loss 0.6352, time 193.74ms, mfu 0.54%
+iter 4980: loss 0.6175, time 190.68ms, mfu 0.54%
+iter 4990: loss 0.6345, time 189.39ms, mfu 0.54%
+step 5000: train loss 0.6308, val loss 0.6324
+saving checkpoint to out-exp2-embd192
+iter 5000: loss 0.6193, time 27460.20ms, mfu 0.49%

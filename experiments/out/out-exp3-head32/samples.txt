@@ -1,0 +1,49 @@
+Overriding: out_dir = out-exp3-head32
+Overriding: device = mps
+Overriding: dtype = float16
+Overriding: max_new_tokens = 1000
+Overriding: num_samples = 5
+number of parameters: 4.78M
+Loading meta from data/tinystories/meta.pkl...
+
+Ben and Lily said, "We were sorry". They said, "We are sorry, mom. We did not mean to me. We did not mean to play nicely."
+They took the car and followed it. They played outside in the sun, and it made them laugh. They had fun. They started to play, and they laughed and played all day. They were very happy.
+<|endoftext|>
+Once upon a time, there was a normal dog named Spot. Spot loved to play with his ball and make it shine and watch it roll. One day, Spot had a long strip in a park with his friend, Tom. They wanted to play together.
+Tom and Spot were so happy. They ran to the park together. Tom took the strip and put it in his park. They found some food and a big coin. They put the go on a big tree and another bird. Tom was a friendly and he ran to the bird. They played with the animal and had fun running and jump and jump in. They were happy they could help the bird and his sister.
+<|endoftext|>
+Once upon a time, in a small house, there lived a girl named Mia. Mia loved to play with h
+---------------
+
+Sam had a special fun game. He looked around for the fruit stopped and felt happy. He could not find the angel anymore. The rain felt good about buildings and making them sing. The rain song was sad and the mom had to see the sun because it had been hot.
+<|endoftext|>
+One day, a little girl named Lucy went to the park with her mom. They saw a big box with white colors. Lucy was very happy and wanted to see what was inside. She opened the box and found a big box of colors. Inside the box, it was not good to stay her color.
+Her friends were sad because they could not play with the colors anymore. They learned to listen to the box and not be so scared of what they said. The animals did not want to take the colors away and make it come down. It was real and big and funny again. They all smiled and laughed and played in the sand all day.
+<|endoftext|>
+One day, a big grumpy cat named Tom found a soft bell in his yard. He was very happy. He wanted to take it home with his mom. Tom said, "Tom,
+---------------
+
+
+Jerry was a gentle girl who was so excited. She wanted to help her find water on the flowers. 
+Jane had an idea. She decided to show her friends how to play her balls and forget to carry the ball. Her friends were so happy and had lots of fun together. They played with the things and had fun. They learned to always listen to their friends and be happy.
+<|endoftext|>
+Once upon a time, in a small town, there was a broken bird named Bobo. Bobo was an obedient bird who loved to sing songs. He would laugh and joke about playing all night. One day, he saw a little bird named Bird who was sad. Bird did not know what to do.
+Bird wanted to help Berry. He tried to sit on the bird and take off his favorite shop. He thought the bird would be fun to sit on the sofa, but all the bird would hear the bird!
+Bird was sad that he could not pick up the bird anymore. He said, "It's ok, Anna. Maybe some we can do it again the bird soon." He learnt his lesson and that he should not play with others. From th
+---------------
+
+Once upon a time, there was a fairy squirrel named Sam. Sam loved to fly all day and play all night. One day, Sam saw a little girl named Lily. She was stupid and wanted to play outside with her friends.
+Lily said, "Sam, let's do it together!" Tom smiled and said, "Thank you, Sam. Help me!" They both went on the sand and watched the candle go slow. It was a fun day for Sam. They all had a lot of fun together.
+<|endoftext|>
+One day, a restless dog named Spot wanted to help. He wanted to go upstairs. He wanted to walk to the park with his friends. So, he took the ball home to play with it. But when he touched the ball, it was not hard. It was a small ball!
+Spot played with the ball all day. He was having so much fun. He was the ball when he tried to play with it, but he was very lazy. Spot was wearing a red ball and he could not play with it. He was sad and asked his friend, "Do not be scared, Spot. Can I play with you?"
+Spot smiled and said, "Yes, I want to play!" He put the ball in the
+---------------
+
+One day, the bird said, "I will teach you how to be so big." The bird was very happy and said, "Thank you, friend, for helping me."
+The bird thought it was a good idea. They promised to be more careful when they played together. They even was happy to see the bird again.
+The bird said to the bird and they both loved their friends. They said goodbye to the bird and went back to the end of the bird's hands. The bird and the bird became good friends, and they all played together in the park.
+<|endoftext|>
+One day, a thoughtful boy named Tim went to the store. He saw a big stadium in the stadium. He wanted to pick the stadium, but he was very scared. He said, "No, thank you for telling me, Tim. I will love the stadium to pick it up he flew."
+Tim wanted to help his mom. She ran to the stadium and showed him some stadium. They picked up the station and ate it all up. The morning the time was a wide bear. The bear was very happy. It thanked Tim and told his mom about the station. Tim felt goo
+---------------

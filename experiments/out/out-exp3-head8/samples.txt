@@ -1,0 +1,52 @@
+Overriding: out_dir = out-exp3-head8
+Overriding: device = mps
+Overriding: dtype = float16
+Overriding: max_new_tokens = 1000
+Overriding: num_samples = 5
+number of parameters: 4.78M
+Loading meta from data/tinystories/meta.pkl...
+
+Ben and Lily said, "Yes, Tom. Let's go to the porch."
+They walked to the porch. They saw many animals and poking things. They were cold and furry. They liked the porch. Tom said, "I like the moon. We like to eat the animals. They are not ready anymore."
+They understood their mom and dad. They said goodbye to Tom and the books together. They decided to take the animals away from his home. They knew they needed their shows to eat and go to the morning. They had a lot of fun and friendship.
+<|endoftext|>
+
+Once there was a little bear who lived in a breeze. Every morning, he would be simple and he would take a pretend with the pictures. One day he stopped and said he couldn't wait to do a partie. He was always stealing and the way he still passed his diamond at him.
+One day, a little girl named Mia came to the party with her mom. Mia was so happy that she was also a great job, so she told her mom trusted her. Mia and her mom would still never forget that when they worked together, the magi
+---------------
+
+Sam had a special lemon that loved very much. He was always told us to help others when they would put them in a cool thing with their special toys.
+One day, Sam was playing with his cool toy car and his lemon was very excited. He wanted to help the cool car go up to the toy store to keep the cool car outside. The toy car started to look for himself. Then, he found a big toy car in the park. Tim was so happy to see his cool car strong. He shared the car with his friends. They all played together and shared the chair with their toys.
+<|endoftext|>
+
+Once upon a time there was a small old man who loved to help his dad. One day, he was walking in the woods when he saw a little boy who was sad. He wanted to fight the way out, but he was not a bad friend. He was three years old and sad that Whiskers looked sad, but he had an idea. He said, "I can help you dad put your way home and your walk first." The little boy fighter whispered back to the bad and said, "Don't worry, I will help you." The
+---------------
+
+One day, Tim went to the park with his mom. Tim saw a big, hard rock on the ground. He wanted to try it again. Suddenly, he heard a loud noise. He looked around and saw a small bird named Penny on the ground.
+Tim was so happy to see the bird. He showed Penny how to push it, the bird said, "Sure, I can try too!" Penny felt better and said, "Thank you, Tim!" They became good friends and played together every day.
+<|endoftext|>
+Once upon a time, in a land far away and full of yummy treats. Every day, the treats forgot to work and be careful where things were fun. They played together all day and did bester. The treats liked the yummy treats every day, and they became good friends and shared their treats with everyone.
+<|endoftext|>
+
+John was walking in the woods when he went to the store. He saw a big, long sun, and he wanted to fight the sun. He walked across a beautiful spot and started to fight. He felt like a squirrel and a threat on his head.
+John was so happy to leave. He struggled 
+---------------
+
+Once upon a time, there was a fair frog named Fluffy. Fluffy loved to swim in the wide pond near the shadow. One day, Fluffy found a big pond on top of a deep blue shadows. The fair was over, and sometimes it would spoil the shadows every day.
+One day, Fluffy found a big big box of clothes in the wide box. She picked it up and showed it to her mom. Her mom smiled and said, "Look at the clothes for our clothes, but what do we do?" Fluffy looked at the clothes and wished they had never seen after the clothes for?
+Fluffy was so happy to find the clothes. They played together every day. Fluffy would run and jumped, and they both would fly and hide behind a big tree. The clothes were happy again, and they became best friends.
+<|endoftext|>
+
+
+Sara liked to make pretty pictures. She had many rooms and loved to play dress-up. She was three years old and always pretended to help her pretty flowers.
+One day, Sara found a big box in her toy box. It was a big box in the living room. She was very c
+---------------
+
+One day, the cat saw a big box outside the park. The cat was scared, but he knew it was not a regular cat. The cat was also big and worked to shake as more colorful balls. He was very surprised!
+The cat tried to be more careful with the children, but they were having a lot of fun. The cat and the dog had a big smile. They were so happy to find and making noises with Mom. They played in the park all day long.
+<|endoftext|>
+Once upon a time, in a small town, there was a little girl named Lily. She had a big black head that made her tower hard and dimamed in the sky. One day, Lily felt sad because she had no one.
+Lily went to her mom and said, "Mom, I can still help you find your tower!" Her mom looked at the tower and smiled. "Yes, Lily, I will help you find your tower, but I must find your tower." Lily was very happy and they both listened to her mom and went home to help Mom.
+<|endoftext|>
+Once upon a time, in a small town, there was an elderly man named Ben. Ben had a big sign that sh
+---------------

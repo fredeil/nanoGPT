@@ -1,0 +1,595 @@
+Overriding config with config/exp1_depth.py:
+# Experiment 1 - Depth sweep
+# Vary: n_layer ∈ {2, 4, 8, 12}
+# Fixed: n_head = 8, n_embd = 256, dropout = 0.0
+# Usage: python train.py config/exp1_depth.py --n_layer=2
+
+out_dir = 'out-exp1-depth'  # will be overridden by run script
+eval_interval = 250
+eval_iters = 200
+log_interval = 10
+
+always_save_checkpoint = False
+
+wandb_log = False
+wandb_project = 'tinystories'
+wandb_run_name = 'exp1-depth'
+
+dataset = 'tinystories'
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 256
+
+# baby GPT model
+n_layer = 6  # overridden via command line
+n_head = 8
+n_embd = 256
+dropout = 0.0
+
+learning_rate = 1e-3
+max_iters = 5000
+lr_decay_iters = 5000
+min_lr = 1e-4
+beta2 = 0.99
+
+warmup_iters = 100
+
+device = 'mps'
+compile = False
+
+Overriding: out_dir = out-exp1-layer8
+Overriding: n_layer = 8
+Overriding: wandb_run_name = exp1-layer8
+tokens per iteration will be: 16,384
+found vocab_size = 228 (inside data/tinystories/meta.pkl)
+Initializing a new model from scratch
+number of parameters: 6.35M
+/Users/fredrik/Developer/uit/nanoGPT/train.py:196: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+/Users/fredrik/Developer/uit/nanoGPT/.venv/lib/python3.12/site-packages/torch/cuda/amp/grad_scaler.py:31: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  super().__init__(
+num decayed parameter tensors: 34, with 6,415,360 parameters
+num non-decayed parameter tensors: 17, with 4,352 parameters
+using fused AdamW: False
+step 0: train loss 5.4750, val loss 5.4746
+iter 0: loss 5.4707, time 49479.23ms, mfu -100.00%
+iter 10: loss 4.0357, time 360.06ms, mfu 0.65%
+iter 20: loss 3.4103, time 379.20ms, mfu 0.64%
+iter 30: loss 2.8994, time 364.63ms, mfu 0.64%
+iter 40: loss 2.6039, time 362.90ms, mfu 0.64%
+iter 50: loss 2.4434, time 356.20ms, mfu 0.64%
+iter 60: loss 2.3589, time 356.89ms, mfu 0.65%
+iter 70: loss 2.3569, time 360.84ms, mfu 0.65%
+iter 80: loss 2.3243, time 357.06ms, mfu 0.65%
+iter 90: loss 2.3113, time 360.01ms, mfu 0.65%
+iter 100: loss 2.2641, time 356.04ms, mfu 0.65%
+iter 110: loss 2.2167, time 354.73ms, mfu 0.65%
+iter 120: loss 2.2101, time 329.81ms, mfu 0.65%
+iter 130: loss 2.1658, time 335.28ms, mfu 0.66%
+iter 140: loss 2.1130, time 330.86ms, mfu 0.66%
+iter 150: loss 2.1031, time 342.11ms, mfu 0.67%
+iter 160: loss 2.1013, time 335.84ms, mfu 0.67%
+iter 170: loss 2.0419, time 331.44ms, mfu 0.67%
+iter 180: loss 1.9596, time 340.21ms, mfu 0.67%
+iter 190: loss 1.9672, time 336.93ms, mfu 0.67%
+iter 200: loss 1.8577, time 340.35ms, mfu 0.68%
+iter 210: loss 1.8339, time 341.33ms, mfu 0.68%
+iter 220: loss 1.8326, time 347.30ms, mfu 0.68%
+iter 230: loss 1.7071, time 339.79ms, mfu 0.68%
+iter 240: loss 1.6873, time 331.23ms, mfu 0.68%
+step 250: train loss 1.6503, val loss 1.6527
+saving checkpoint to out-exp1-layer8
+iter 250: loss 1.6378, time 49742.77ms, mfu 0.61%
+iter 260: loss 1.6050, time 369.73ms, mfu 0.61%
+iter 270: loss 1.5709, time 361.01ms, mfu 0.62%
+iter 280: loss 1.6009, time 379.70ms, mfu 0.62%
+iter 290: loss 1.5199, time 362.01ms, mfu 0.62%
+iter 300: loss 1.4196, time 365.40ms, mfu 0.62%
+iter 310: loss 1.4662, time 368.67ms, mfu 0.62%
+iter 320: loss 1.4271, time 374.20ms, mfu 0.62%
+iter 330: loss 1.4166, time 337.76ms, mfu 0.63%
+iter 340: loss 1.3492, time 337.88ms, mfu 0.64%
+iter 350: loss 1.2850, time 353.09ms, mfu 0.64%
+iter 360: loss 1.2651, time 338.87ms, mfu 0.64%
+iter 370: loss 1.2428, time 342.08ms, mfu 0.65%
+iter 380: loss 1.2375, time 340.23ms, mfu 0.65%
+iter 390: loss 1.2334, time 343.02ms, mfu 0.65%
+iter 400: loss 1.1852, time 341.65ms, mfu 0.66%
+iter 410: loss 1.1839, time 348.05ms, mfu 0.66%
+iter 420: loss 1.2586, time 342.12ms, mfu 0.66%
+iter 430: loss 1.1785, time 350.99ms, mfu 0.66%
+iter 440: loss 1.1695, time 345.11ms, mfu 0.66%
+iter 450: loss 1.1642, time 341.08ms, mfu 0.66%
+iter 460: loss 1.1522, time 345.11ms, mfu 0.67%
+iter 470: loss 1.1455, time 345.78ms, mfu 0.67%
+iter 480: loss 1.1083, time 339.82ms, mfu 0.67%
+iter 490: loss 1.1107, time 350.25ms, mfu 0.67%
+step 500: train loss 1.0943, val loss 1.0945
+saving checkpoint to out-exp1-layer8
+iter 500: loss 1.1106, time 52805.25ms, mfu 0.60%
+iter 510: loss 1.0803, time 377.75ms, mfu 0.60%
+iter 520: loss 1.0796, time 376.72ms, mfu 0.60%
+iter 530: loss 1.0711, time 373.42ms, mfu 0.61%
+iter 540: loss 1.0551, time 384.30ms, mfu 0.61%
+iter 550: loss 1.0522, time 375.23ms, mfu 0.61%
+iter 560: loss 1.0540, time 366.96ms, mfu 0.61%
+iter 570: loss 1.0214, time 377.78ms, mfu 0.61%
+iter 580: loss 1.0084, time 384.28ms, mfu 0.61%
+iter 590: loss 0.9746, time 340.39ms, mfu 0.62%
+iter 600: loss 1.0296, time 347.59ms, mfu 0.62%
+iter 610: loss 0.9985, time 346.83ms, mfu 0.63%
+iter 620: loss 1.0237, time 360.42ms, mfu 0.63%
+iter 630: loss 1.0291, time 363.69ms, mfu 0.63%
+iter 640: loss 0.9500, time 346.62ms, mfu 0.64%
+iter 650: loss 0.9284, time 346.82ms, mfu 0.64%
+iter 660: loss 0.9755, time 339.78ms, mfu 0.64%
+iter 670: loss 0.9473, time 343.86ms, mfu 0.65%
+iter 680: loss 0.9569, time 342.36ms, mfu 0.65%
+iter 690: loss 0.8985, time 348.77ms, mfu 0.65%
+iter 700: loss 0.9855, time 344.65ms, mfu 0.66%
+iter 710: loss 0.9328, time 349.42ms, mfu 0.66%
+iter 720: loss 0.9446, time 345.83ms, mfu 0.66%
+iter 730: loss 0.9419, time 345.98ms, mfu 0.66%
+iter 740: loss 0.9177, time 344.46ms, mfu 0.66%
+step 750: train loss 0.9298, val loss 0.9280
+saving checkpoint to out-exp1-layer8
+iter 750: loss 0.9034, time 51348.24ms, mfu 0.60%
+iter 760: loss 0.9489, time 373.94ms, mfu 0.60%
+iter 770: loss 0.9238, time 373.74ms, mfu 0.60%
+iter 780: loss 0.9297, time 379.23ms, mfu 0.60%
+iter 790: loss 0.8832, time 373.48ms, mfu 0.60%
+iter 800: loss 0.9008, time 372.33ms, mfu 0.61%
+iter 810: loss 0.8845, time 369.54ms, mfu 0.61%
+iter 820: loss 0.9221, time 376.44ms, mfu 0.61%
+iter 830: loss 0.9049, time 370.32ms, mfu 0.61%
+iter 840: loss 0.8927, time 365.02ms, mfu 0.61%
+iter 850: loss 0.8340, time 378.52ms, mfu 0.62%
+iter 860: loss 0.8933, time 378.53ms, mfu 0.62%
+iter 870: loss 0.8821, time 375.79ms, mfu 0.62%
+iter 880: loss 0.8806, time 375.31ms, mfu 0.62%
+iter 890: loss 0.8405, time 372.75ms, mfu 0.62%
+iter 900: loss 0.8676, time 373.46ms, mfu 0.62%
+iter 910: loss 0.8591, time 369.25ms, mfu 0.62%
+iter 920: loss 0.8691, time 372.94ms, mfu 0.62%
+iter 930: loss 0.8903, time 372.94ms, mfu 0.62%
+iter 940: loss 0.8369, time 370.99ms, mfu 0.62%
+iter 950: loss 0.8591, time 367.09ms, mfu 0.62%
+iter 960: loss 0.8542, time 371.39ms, mfu 0.62%
+iter 970: loss 0.8012, time 370.99ms, mfu 0.62%
+iter 980: loss 0.8603, time 371.18ms, mfu 0.62%
+iter 990: loss 0.8617, time 366.01ms, mfu 0.63%
+step 1000: train loss 0.8382, val loss 0.8407
+saving checkpoint to out-exp1-layer8
+iter 1000: loss 0.8357, time 52074.42ms, mfu 0.56%
+iter 1010: loss 0.8165, time 374.43ms, mfu 0.57%
+iter 1020: loss 0.8863, time 362.14ms, mfu 0.58%
+iter 1030: loss 0.8161, time 378.70ms, mfu 0.58%
+iter 1040: loss 0.8146, time 366.18ms, mfu 0.59%
+iter 1050: loss 0.8087, time 369.54ms, mfu 0.59%
+iter 1060: loss 0.7959, time 363.99ms, mfu 0.60%
+iter 1070: loss 0.8275, time 362.12ms, mfu 0.60%
+iter 1080: loss 0.8080, time 376.17ms, mfu 0.60%
+iter 1090: loss 0.8308, time 366.20ms, mfu 0.61%
+iter 1100: loss 0.8502, time 365.14ms, mfu 0.61%
+iter 1110: loss 0.8051, time 367.62ms, mfu 0.61%
+iter 1120: loss 0.7763, time 357.32ms, mfu 0.62%
+iter 1130: loss 0.7883, time 377.65ms, mfu 0.62%
+iter 1140: loss 0.7873, time 363.50ms, mfu 0.62%
+iter 1150: loss 0.8222, time 367.24ms, mfu 0.62%
+iter 1160: loss 0.7754, time 361.45ms, mfu 0.62%
+iter 1170: loss 0.8152, time 363.93ms, mfu 0.62%
+iter 1180: loss 0.8220, time 365.70ms, mfu 0.63%
+iter 1190: loss 0.7707, time 365.69ms, mfu 0.63%
+iter 1200: loss 0.7930, time 365.48ms, mfu 0.63%
+iter 1210: loss 0.7632, time 363.46ms, mfu 0.63%
+iter 1220: loss 0.7590, time 370.63ms, mfu 0.63%
+iter 1230: loss 0.7735, time 371.28ms, mfu 0.63%
+iter 1240: loss 0.7539, time 364.68ms, mfu 0.63%
+step 1250: train loss 0.7815, val loss 0.7827
+saving checkpoint to out-exp1-layer8
+iter 1250: loss 0.7766, time 50771.87ms, mfu 0.57%
+iter 1260: loss 0.8164, time 335.80ms, mfu 0.58%
+iter 1270: loss 0.7653, time 346.76ms, mfu 0.59%
+iter 1280: loss 0.7911, time 339.81ms, mfu 0.60%
+iter 1290: loss 0.7589, time 344.17ms, mfu 0.61%
+iter 1300: loss 0.7743, time 335.59ms, mfu 0.62%
+iter 1310: loss 0.7644, time 337.77ms, mfu 0.62%
+iter 1320: loss 0.7971, time 337.13ms, mfu 0.63%
+iter 1330: loss 0.7955, time 336.97ms, mfu 0.64%
+iter 1340: loss 0.7791, time 343.28ms, mfu 0.64%
+iter 1350: loss 0.7660, time 338.28ms, mfu 0.65%
+iter 1360: loss 0.7482, time 338.10ms, mfu 0.65%
+iter 1370: loss 0.7652, time 338.86ms, mfu 0.65%
+iter 1380: loss 0.7688, time 337.29ms, mfu 0.66%
+iter 1390: loss 0.7340, time 338.43ms, mfu 0.66%
+iter 1400: loss 0.7594, time 349.26ms, mfu 0.66%
+iter 1410: loss 0.7434, time 346.21ms, mfu 0.66%
+iter 1420: loss 0.7938, time 344.16ms, mfu 0.66%
+iter 1430: loss 0.7491, time 345.53ms, mfu 0.67%
+iter 1440: loss 0.7705, time 352.41ms, mfu 0.66%
+iter 1450: loss 0.7501, time 359.61ms, mfu 0.66%
+iter 1460: loss 0.7158, time 375.16ms, mfu 0.66%
+iter 1470: loss 0.7891, time 370.07ms, mfu 0.66%
+iter 1480: loss 0.7461, time 368.29ms, mfu 0.65%
+iter 1490: loss 0.7435, time 365.03ms, mfu 0.65%
+step 1500: train loss 0.7421, val loss 0.7449
+saving checkpoint to out-exp1-layer8
+iter 1500: loss 0.7656, time 52505.48ms, mfu 0.59%
+iter 1510: loss 0.7191, time 368.87ms, mfu 0.59%
+iter 1520: loss 0.7479, time 374.83ms, mfu 0.60%
+iter 1530: loss 0.7702, time 372.72ms, mfu 0.60%
+iter 1540: loss 0.7054, time 369.37ms, mfu 0.60%
+iter 1550: loss 0.7348, time 365.99ms, mfu 0.61%
+iter 1560: loss 0.7209, time 374.18ms, mfu 0.61%
+iter 1570: loss 0.7625, time 393.33ms, mfu 0.61%
+iter 1580: loss 0.7423, time 368.95ms, mfu 0.61%
+iter 1590: loss 0.6978, time 373.51ms, mfu 0.61%
+iter 1600: loss 0.7426, time 374.50ms, mfu 0.61%
+iter 1610: loss 0.7456, time 376.83ms, mfu 0.61%
+iter 1620: loss 0.6968, time 363.37ms, mfu 0.61%
+iter 1630: loss 0.7480, time 373.16ms, mfu 0.62%
+iter 1640: loss 0.7224, time 381.15ms, mfu 0.62%
+iter 1650: loss 0.7051, time 368.90ms, mfu 0.62%
+iter 1660: loss 0.7209, time 362.48ms, mfu 0.62%
+iter 1670: loss 0.7147, time 380.24ms, mfu 0.62%
+iter 1680: loss 0.7383, time 368.85ms, mfu 0.62%
+iter 1690: loss 0.7452, time 362.70ms, mfu 0.62%
+iter 1700: loss 0.7012, time 371.61ms, mfu 0.62%
+iter 1710: loss 0.7398, time 386.28ms, mfu 0.62%
+iter 1720: loss 0.7059, time 370.16ms, mfu 0.62%
+iter 1730: loss 0.7475, time 365.56ms, mfu 0.62%
+iter 1740: loss 0.6972, time 371.19ms, mfu 0.62%
+step 1750: train loss 0.7147, val loss 0.7159
+saving checkpoint to out-exp1-layer8
+iter 1750: loss 0.7209, time 51614.12ms, mfu 0.56%
+iter 1760: loss 0.7045, time 337.72ms, mfu 0.58%
+iter 1770: loss 0.7130, time 351.04ms, mfu 0.58%
+iter 1780: loss 0.7295, time 348.90ms, mfu 0.59%
+iter 1790: loss 0.7152, time 342.50ms, mfu 0.60%
+iter 1800: loss 0.7141, time 354.05ms, mfu 0.61%
+iter 1810: loss 0.7190, time 345.30ms, mfu 0.61%
+iter 1820: loss 0.6957, time 357.29ms, mfu 0.62%
+iter 1830: loss 0.7152, time 352.62ms, mfu 0.62%
+iter 1840: loss 0.7087, time 339.20ms, mfu 0.63%
+iter 1850: loss 0.6927, time 340.71ms, mfu 0.63%
+iter 1860: loss 0.7025, time 357.64ms, mfu 0.64%
+iter 1870: loss 0.6884, time 344.78ms, mfu 0.64%
+iter 1880: loss 0.6834, time 345.10ms, mfu 0.64%
+iter 1890: loss 0.7183, time 351.56ms, mfu 0.65%
+iter 1900: loss 0.7069, time 342.72ms, mfu 0.65%
+iter 1910: loss 0.7170, time 340.63ms, mfu 0.65%
+iter 1920: loss 0.7123, time 351.58ms, mfu 0.65%
+iter 1930: loss 0.6969, time 347.74ms, mfu 0.66%
+iter 1940: loss 0.7061, time 349.29ms, mfu 0.66%
+iter 1950: loss 0.6751, time 348.45ms, mfu 0.66%
+iter 1960: loss 0.7230, time 342.06ms, mfu 0.66%
+iter 1970: loss 0.6844, time 349.10ms, mfu 0.66%
+iter 1980: loss 0.7050, time 350.62ms, mfu 0.66%
+iter 1990: loss 0.7336, time 344.97ms, mfu 0.66%
+step 2000: train loss 0.7011, val loss 0.7026
+saving checkpoint to out-exp1-layer8
+iter 2000: loss 0.7263, time 50391.94ms, mfu 0.60%
+iter 2010: loss 0.6938, time 369.49ms, mfu 0.60%
+iter 2020: loss 0.6942, time 370.24ms, mfu 0.60%
+iter 2030: loss 0.6600, time 383.89ms, mfu 0.60%
+iter 2040: loss 0.7322, time 375.90ms, mfu 0.61%
+iter 2050: loss 0.7035, time 377.31ms, mfu 0.61%
+iter 2060: loss 0.7063, time 374.49ms, mfu 0.61%
+iter 2070: loss 0.7299, time 381.04ms, mfu 0.61%
+iter 2080: loss 0.7261, time 376.81ms, mfu 0.61%
+iter 2090: loss 0.6951, time 378.34ms, mfu 0.61%
+iter 2100: loss 0.7321, time 376.09ms, mfu 0.61%
+iter 2110: loss 0.7104, time 379.73ms, mfu 0.61%
+iter 2120: loss 0.6879, time 379.20ms, mfu 0.61%
+iter 2130: loss 0.7482, time 376.69ms, mfu 0.61%
+iter 2140: loss 0.6592, time 377.09ms, mfu 0.61%
+iter 2150: loss 0.7046, time 378.52ms, mfu 0.61%
+iter 2160: loss 0.6727, time 422.46ms, mfu 0.61%
+iter 2170: loss 0.6881, time 348.03ms, mfu 0.61%
+iter 2180: loss 0.7153, time 347.24ms, mfu 0.62%
+iter 2190: loss 0.6706, time 347.66ms, mfu 0.62%
+iter 2200: loss 0.6839, time 350.81ms, mfu 0.63%
+iter 2210: loss 0.6810, time 348.19ms, mfu 0.63%
+iter 2220: loss 0.6946, time 341.29ms, mfu 0.64%
+iter 2230: loss 0.6903, time 344.89ms, mfu 0.64%
+iter 2240: loss 0.7047, time 339.17ms, mfu 0.65%
+step 2250: train loss 0.6760, val loss 0.6768
+saving checkpoint to out-exp1-layer8
+iter 2250: loss 0.7142, time 50806.26ms, mfu 0.58%
+iter 2260: loss 0.6499, time 386.49ms, mfu 0.58%
+iter 2270: loss 0.6561, time 369.00ms, mfu 0.59%
+iter 2280: loss 0.7065, time 375.62ms, mfu 0.59%
+iter 2290: loss 0.6800, time 369.65ms, mfu 0.60%
+iter 2300: loss 0.6682, time 369.78ms, mfu 0.60%
+iter 2310: loss 0.6233, time 369.46ms, mfu 0.60%
+iter 2320: loss 0.6767, time 365.27ms, mfu 0.61%
+iter 2330: loss 0.7009, time 389.02ms, mfu 0.61%
+iter 2340: loss 0.6845, time 404.71ms, mfu 0.60%
+iter 2350: loss 0.6620, time 344.60ms, mfu 0.61%
+iter 2360: loss 0.6669, time 353.14ms, mfu 0.62%
+iter 2370: loss 0.6664, time 341.50ms, mfu 0.62%
+iter 2380: loss 0.6714, time 346.30ms, mfu 0.63%
+iter 2390: loss 0.6659, time 349.76ms, mfu 0.63%
+iter 2400: loss 0.6736, time 349.11ms, mfu 0.63%
+iter 2410: loss 0.6298, time 351.47ms, mfu 0.64%
+iter 2420: loss 0.6333, time 349.34ms, mfu 0.64%
+iter 2430: loss 0.6685, time 348.35ms, mfu 0.64%
+iter 2440: loss 0.6335, time 336.46ms, mfu 0.65%
+iter 2450: loss 0.6318, time 350.11ms, mfu 0.65%
+iter 2460: loss 0.6380, time 340.34ms, mfu 0.65%
+iter 2470: loss 0.6771, time 344.17ms, mfu 0.66%
+iter 2480: loss 0.6781, time 347.42ms, mfu 0.66%
+iter 2490: loss 0.6409, time 344.34ms, mfu 0.66%
+step 2500: train loss 0.6640, val loss 0.6638
+saving checkpoint to out-exp1-layer8
+iter 2500: loss 0.6344, time 49515.05ms, mfu 0.59%
+iter 2510: loss 0.6550, time 346.42ms, mfu 0.60%
+iter 2520: loss 0.6370, time 347.14ms, mfu 0.61%
+iter 2530: loss 0.6548, time 351.97ms, mfu 0.61%
+iter 2540: loss 0.6664, time 344.72ms, mfu 0.62%
+iter 2550: loss 0.6912, time 352.09ms, mfu 0.62%
+iter 2560: loss 0.6979, time 342.64ms, mfu 0.63%
+iter 2570: loss 0.6613, time 371.73ms, mfu 0.63%
+iter 2580: loss 0.6496, time 374.72ms, mfu 0.63%
+iter 2590: loss 0.6845, time 379.42ms, mfu 0.63%
+iter 2600: loss 0.6531, time 383.36ms, mfu 0.63%
+iter 2610: loss 0.6308, time 372.13ms, mfu 0.63%
+iter 2620: loss 0.6715, time 351.54ms, mfu 0.63%
+iter 2630: loss 0.6447, time 347.31ms, mfu 0.63%
+iter 2640: loss 0.6501, time 345.49ms, mfu 0.64%
+iter 2650: loss 0.6663, time 337.47ms, mfu 0.64%
+iter 2660: loss 0.7015, time 345.15ms, mfu 0.65%
+iter 2670: loss 0.6496, time 339.06ms, mfu 0.65%
+iter 2680: loss 0.6294, time 345.15ms, mfu 0.65%
+iter 2690: loss 0.6634, time 347.11ms, mfu 0.66%
+iter 2700: loss 0.6360, time 344.01ms, mfu 0.66%
+iter 2710: loss 0.6522, time 352.01ms, mfu 0.66%
+iter 2720: loss 0.6488, time 337.04ms, mfu 0.66%
+iter 2730: loss 0.6362, time 353.20ms, mfu 0.66%
+iter 2740: loss 0.6595, time 338.73ms, mfu 0.66%
+step 2750: train loss 0.6495, val loss 0.6507
+saving checkpoint to out-exp1-layer8
+iter 2750: loss 0.6372, time 52125.08ms, mfu 0.60%
+iter 2760: loss 0.6536, time 374.31ms, mfu 0.60%
+iter 2770: loss 0.6692, time 387.17ms, mfu 0.60%
+iter 2780: loss 0.6313, time 375.45ms, mfu 0.60%
+iter 2790: loss 0.6286, time 374.55ms, mfu 0.60%
+iter 2800: loss 0.6262, time 369.83ms, mfu 0.61%
+iter 2810: loss 0.6444, time 387.37ms, mfu 0.61%
+iter 2820: loss 0.6404, time 390.86ms, mfu 0.61%
+iter 2830: loss 0.6596, time 372.04ms, mfu 0.61%
+iter 2840: loss 0.6631, time 375.25ms, mfu 0.61%
+iter 2850: loss 0.6481, time 384.18ms, mfu 0.61%
+iter 2860: loss 0.6286, time 368.13ms, mfu 0.61%
+iter 2870: loss 0.6678, time 369.53ms, mfu 0.61%
+iter 2880: loss 0.6533, time 379.31ms, mfu 0.61%
+iter 2890: loss 0.6240, time 379.04ms, mfu 0.61%
+iter 2900: loss 0.6636, time 374.87ms, mfu 0.61%
+iter 2910: loss 0.6012, time 367.78ms, mfu 0.62%
+iter 2920: loss 0.6366, time 376.22ms, mfu 0.62%
+iter 2930: loss 0.6294, time 375.14ms, mfu 0.62%
+iter 2940: loss 0.6616, time 369.77ms, mfu 0.62%
+iter 2950: loss 0.6560, time 369.64ms, mfu 0.62%
+iter 2960: loss 0.6360, time 393.84ms, mfu 0.62%
+iter 2970: loss 0.6100, time 372.47ms, mfu 0.62%
+iter 2980: loss 0.6691, time 379.79ms, mfu 0.62%
+iter 2990: loss 0.6620, time 374.76ms, mfu 0.62%
+step 3000: train loss 0.6378, val loss 0.6332
+saving checkpoint to out-exp1-layer8
+iter 3000: loss 0.6290, time 50818.99ms, mfu 0.56%
+iter 3010: loss 0.6315, time 339.78ms, mfu 0.57%
+iter 3020: loss 0.6441, time 341.49ms, mfu 0.58%
+iter 3030: loss 0.6243, time 340.52ms, mfu 0.59%
+iter 3040: loss 0.6228, time 341.81ms, mfu 0.60%
+iter 3050: loss 0.6786, time 338.47ms, mfu 0.61%
+iter 3060: loss 0.6487, time 337.82ms, mfu 0.62%
+iter 3070: loss 0.6303, time 343.36ms, mfu 0.62%
+iter 3080: loss 0.6189, time 340.65ms, mfu 0.63%
+iter 3090: loss 0.5922, time 337.34ms, mfu 0.64%
+iter 3100: loss 0.6081, time 339.78ms, mfu 0.64%
+iter 3110: loss 0.6342, time 342.10ms, mfu 0.65%
+iter 3120: loss 0.6245, time 347.80ms, mfu 0.65%
+iter 3130: loss 0.6172, time 342.67ms, mfu 0.65%
+iter 3140: loss 0.6157, time 339.25ms, mfu 0.65%
+iter 3150: loss 0.6306, time 344.47ms, mfu 0.66%
+iter 3160: loss 0.6248, time 345.72ms, mfu 0.66%
+iter 3170: loss 0.6185, time 346.25ms, mfu 0.66%
+iter 3180: loss 0.6462, time 335.39ms, mfu 0.66%
+iter 3190: loss 0.6280, time 337.09ms, mfu 0.67%
+iter 3200: loss 0.6093, time 339.04ms, mfu 0.67%
+iter 3210: loss 0.6549, time 338.02ms, mfu 0.67%
+iter 3220: loss 0.6212, time 347.84ms, mfu 0.67%
+iter 3230: loss 0.6155, time 338.82ms, mfu 0.67%
+iter 3240: loss 0.6304, time 344.18ms, mfu 0.67%
+step 3250: train loss 0.6265, val loss 0.6289
+saving checkpoint to out-exp1-layer8
+iter 3250: loss 0.6438, time 52038.78ms, mfu 0.61%
+iter 3260: loss 0.6118, time 372.51ms, mfu 0.61%
+iter 3270: loss 0.6092, time 369.69ms, mfu 0.61%
+iter 3280: loss 0.6348, time 376.66ms, mfu 0.61%
+iter 3290: loss 0.6227, time 376.54ms, mfu 0.61%
+iter 3300: loss 0.6505, time 380.42ms, mfu 0.61%
+iter 3310: loss 0.6227, time 368.20ms, mfu 0.61%
+iter 3320: loss 0.6104, time 371.12ms, mfu 0.62%
+iter 3330: loss 0.6032, time 375.98ms, mfu 0.62%
+iter 3340: loss 0.5942, time 371.62ms, mfu 0.62%
+iter 3350: loss 0.6149, time 370.60ms, mfu 0.62%
+iter 3360: loss 0.6188, time 378.73ms, mfu 0.62%
+iter 3370: loss 0.6386, time 370.07ms, mfu 0.62%
+iter 3380: loss 0.6460, time 369.55ms, mfu 0.62%
+iter 3390: loss 0.5914, time 378.14ms, mfu 0.62%
+iter 3400: loss 0.5983, time 374.57ms, mfu 0.62%
+iter 3410: loss 0.6416, time 370.72ms, mfu 0.62%
+iter 3420: loss 0.6280, time 373.03ms, mfu 0.62%
+iter 3430: loss 0.5951, time 394.00ms, mfu 0.62%
+iter 3440: loss 0.6312, time 368.60ms, mfu 0.62%
+iter 3450: loss 0.6400, time 366.63ms, mfu 0.62%
+iter 3460: loss 0.5953, time 370.59ms, mfu 0.62%
+iter 3470: loss 0.6199, time 369.67ms, mfu 0.62%
+iter 3480: loss 0.6292, time 371.49ms, mfu 0.62%
+iter 3490: loss 0.6140, time 368.97ms, mfu 0.62%
+step 3500: train loss 0.6183, val loss 0.6202
+saving checkpoint to out-exp1-layer8
+iter 3500: loss 0.5833, time 52171.48ms, mfu 0.56%
+iter 3510: loss 0.6273, time 368.00ms, mfu 0.57%
+iter 3520: loss 0.6221, time 369.90ms, mfu 0.58%
+iter 3530: loss 0.5837, time 364.81ms, mfu 0.58%
+iter 3540: loss 0.6290, time 369.44ms, mfu 0.59%
+iter 3550: loss 0.6331, time 368.41ms, mfu 0.59%
+iter 3560: loss 0.6241, time 375.12ms, mfu 0.59%
+iter 3570: loss 0.6219, time 368.03ms, mfu 0.60%
+iter 3580: loss 0.6196, time 370.97ms, mfu 0.60%
+iter 3590: loss 0.6255, time 370.02ms, mfu 0.60%
+iter 3600: loss 0.6013, time 380.18ms, mfu 0.61%
+iter 3610: loss 0.6342, time 363.42ms, mfu 0.61%
+iter 3620: loss 0.6439, time 367.35ms, mfu 0.61%
+iter 3630: loss 0.5959, time 366.32ms, mfu 0.61%
+iter 3640: loss 0.5793, time 363.35ms, mfu 0.62%
+iter 3650: loss 0.6251, time 375.51ms, mfu 0.62%
+iter 3660: loss 0.6027, time 369.37ms, mfu 0.62%
+iter 3670: loss 0.6119, time 374.02ms, mfu 0.62%
+iter 3680: loss 0.5946, time 373.39ms, mfu 0.62%
+iter 3690: loss 0.6229, time 361.09ms, mfu 0.62%
+iter 3700: loss 0.5884, time 356.70ms, mfu 0.63%
+iter 3710: loss 0.6477, time 368.30ms, mfu 0.63%
+iter 3720: loss 0.6107, time 362.87ms, mfu 0.63%
+iter 3730: loss 0.5983, time 362.01ms, mfu 0.63%
+iter 3740: loss 0.6141, time 368.43ms, mfu 0.63%
+step 3750: train loss 0.6083, val loss 0.6075
+saving checkpoint to out-exp1-layer8
+iter 3750: loss 0.6348, time 51444.62ms, mfu 0.57%
+iter 3760: loss 0.5751, time 369.29ms, mfu 0.57%
+iter 3770: loss 0.5993, time 354.48ms, mfu 0.58%
+iter 3780: loss 0.6301, time 372.58ms, mfu 0.59%
+iter 3790: loss 0.6182, time 369.64ms, mfu 0.59%
+iter 3800: loss 0.5953, time 360.17ms, mfu 0.60%
+iter 3810: loss 0.5564, time 360.93ms, mfu 0.60%
+iter 3820: loss 0.6067, time 362.89ms, mfu 0.61%
+iter 3830: loss 0.5829, time 362.44ms, mfu 0.61%
+iter 3840: loss 0.5846, time 360.56ms, mfu 0.61%
+iter 3850: loss 0.6009, time 372.96ms, mfu 0.61%
+iter 3860: loss 0.6312, time 357.03ms, mfu 0.62%
+iter 3870: loss 0.6144, time 362.14ms, mfu 0.62%
+iter 3880: loss 0.6218, time 361.88ms, mfu 0.62%
+iter 3890: loss 0.6455, time 362.54ms, mfu 0.63%
+iter 3900: loss 0.5962, time 371.62ms, mfu 0.63%
+iter 3910: loss 0.5937, time 362.83ms, mfu 0.63%
+iter 3920: loss 0.6123, time 373.39ms, mfu 0.63%
+iter 3930: loss 0.6223, time 357.85ms, mfu 0.63%
+iter 3940: loss 0.6147, time 361.89ms, mfu 0.63%
+iter 3950: loss 0.6037, time 359.02ms, mfu 0.63%
+iter 3960: loss 0.6019, time 357.43ms, mfu 0.63%
+iter 3970: loss 0.5950, time 376.63ms, mfu 0.63%
+iter 3980: loss 0.6053, time 365.76ms, mfu 0.63%
+iter 3990: loss 0.5980, time 360.76ms, mfu 0.63%
+step 4000: train loss 0.6030, val loss 0.6038
+saving checkpoint to out-exp1-layer8
+iter 4000: loss 0.6157, time 51348.62ms, mfu 0.57%
+iter 4010: loss 0.5546, time 362.44ms, mfu 0.58%
+iter 4020: loss 0.5842, time 361.29ms, mfu 0.59%
+iter 4030: loss 0.5523, time 376.96ms, mfu 0.59%
+iter 4040: loss 0.6079, time 363.72ms, mfu 0.59%
+iter 4050: loss 0.6246, time 360.78ms, mfu 0.60%
+iter 4060: loss 0.5886, time 367.72ms, mfu 0.60%
+iter 4070: loss 0.6293, time 364.26ms, mfu 0.61%
+iter 4080: loss 0.5948, time 361.53ms, mfu 0.61%
+iter 4090: loss 0.6179, time 359.88ms, mfu 0.61%
+iter 4100: loss 0.5924, time 363.45ms, mfu 0.62%
+iter 4110: loss 0.5956, time 371.70ms, mfu 0.62%
+iter 4120: loss 0.6287, time 358.88ms, mfu 0.62%
+iter 4130: loss 0.5889, time 380.32ms, mfu 0.62%
+iter 4140: loss 0.6012, time 365.16ms, mfu 0.62%
+iter 4150: loss 0.6263, time 358.49ms, mfu 0.63%
+iter 4160: loss 0.6238, time 362.08ms, mfu 0.63%
+iter 4170: loss 0.6202, time 366.23ms, mfu 0.63%
+iter 4180: loss 0.5785, time 362.37ms, mfu 0.63%
+iter 4190: loss 0.5621, time 362.40ms, mfu 0.63%
+iter 4200: loss 0.6285, time 368.11ms, mfu 0.63%
+iter 4210: loss 0.6037, time 359.08ms, mfu 0.63%
+iter 4220: loss 0.6438, time 314.66ms, mfu 0.64%
+iter 4230: loss 0.6345, time 319.55ms, mfu 0.65%
+iter 4240: loss 0.5947, time 321.61ms, mfu 0.66%
+step 4250: train loss 0.5961, val loss 0.5954
+saving checkpoint to out-exp1-layer8
+iter 4250: loss 0.6122, time 46263.85ms, mfu 0.59%
+iter 4260: loss 0.5518, time 324.83ms, mfu 0.61%
+iter 4270: loss 0.5613, time 321.44ms, mfu 0.62%
+iter 4280: loss 0.6167, time 321.70ms, mfu 0.63%
+iter 4290: loss 0.6044, time 324.66ms, mfu 0.64%
+iter 4300: loss 0.6341, time 326.19ms, mfu 0.65%
+iter 4310: loss 0.5908, time 340.66ms, mfu 0.65%
+iter 4320: loss 0.5879, time 347.09ms, mfu 0.65%
+iter 4330: loss 0.6045, time 347.88ms, mfu 0.65%
+iter 4340: loss 0.5975, time 343.48ms, mfu 0.66%
+iter 4350: loss 0.5937, time 344.37ms, mfu 0.66%
+iter 4360: loss 0.6212, time 349.32ms, mfu 0.66%
+iter 4370: loss 0.5698, time 336.93ms, mfu 0.66%
+iter 4380: loss 0.5794, time 346.34ms, mfu 0.66%
+iter 4390: loss 0.5793, time 345.35ms, mfu 0.66%
+iter 4400: loss 0.6115, time 343.22ms, mfu 0.67%
+iter 4410: loss 0.5921, time 343.14ms, mfu 0.67%
+iter 4420: loss 0.6147, time 351.75ms, mfu 0.67%
+iter 4430: loss 0.6364, time 343.81ms, mfu 0.67%
+iter 4440: loss 0.5655, time 347.16ms, mfu 0.67%
+iter 4450: loss 0.5635, time 353.15ms, mfu 0.67%
+iter 4460: loss 0.5837, time 346.44ms, mfu 0.67%
+iter 4470: loss 0.5753, time 354.74ms, mfu 0.67%
+iter 4480: loss 0.5858, time 396.22ms, mfu 0.66%
+iter 4490: loss 0.5762, time 376.84ms, mfu 0.66%
+step 4500: train loss 0.5898, val loss 0.5906
+saving checkpoint to out-exp1-layer8
+iter 4500: loss 0.6148, time 53719.06ms, mfu 0.59%
+iter 4510: loss 0.5798, time 376.95ms, mfu 0.59%
+iter 4520: loss 0.5897, time 370.89ms, mfu 0.60%
+iter 4530: loss 0.5856, time 382.90ms, mfu 0.60%
+iter 4540: loss 0.5801, time 381.74ms, mfu 0.60%
+iter 4550: loss 0.5569, time 383.92ms, mfu 0.60%
+iter 4560: loss 0.6310, time 380.74ms, mfu 0.60%
+iter 4570: loss 0.5693, time 380.73ms, mfu 0.60%
+iter 4580: loss 0.5764, time 378.84ms, mfu 0.60%
+iter 4590: loss 0.5679, time 379.17ms, mfu 0.60%
+iter 4600: loss 0.5803, time 375.70ms, mfu 0.61%
+iter 4610: loss 0.6006, time 378.06ms, mfu 0.61%
+iter 4620: loss 0.5730, time 374.09ms, mfu 0.61%
+iter 4630: loss 0.6032, time 381.65ms, mfu 0.61%
+iter 4640: loss 0.5799, time 383.52ms, mfu 0.61%
+iter 4650: loss 0.5937, time 374.71ms, mfu 0.61%
+iter 4660: loss 0.6161, time 381.90ms, mfu 0.61%
+iter 4670: loss 0.5853, time 372.67ms, mfu 0.61%
+iter 4680: loss 0.5701, time 387.01ms, mfu 0.61%
+iter 4690: loss 0.5839, time 376.73ms, mfu 0.61%
+iter 4700: loss 0.5648, time 376.56ms, mfu 0.61%
+iter 4710: loss 0.5815, time 367.99ms, mfu 0.61%
+iter 4720: loss 0.5862, time 376.69ms, mfu 0.62%
+iter 4730: loss 0.5680, time 378.83ms, mfu 0.62%
+iter 4740: loss 0.5708, time 370.20ms, mfu 0.62%
+step 4750: train loss 0.5876, val loss 0.5890
+saving checkpoint to out-exp1-layer8
+iter 4750: loss 0.5905, time 52192.49ms, mfu 0.56%
+iter 4760: loss 0.5888, time 344.32ms, mfu 0.57%
+iter 4770: loss 0.5840, time 341.11ms, mfu 0.58%
+iter 4780: loss 0.5892, time 353.98ms, mfu 0.59%
+iter 4790: loss 0.5623, time 350.22ms, mfu 0.60%
+iter 4800: loss 0.5832, time 341.22ms, mfu 0.60%
+iter 4810: loss 0.5564, time 347.79ms, mfu 0.61%
+iter 4820: loss 0.5904, time 343.88ms, mfu 0.62%
+iter 4830: loss 0.5912, time 339.33ms, mfu 0.62%
+iter 4840: loss 0.6311, time 342.97ms, mfu 0.63%
+iter 4850: loss 0.5689, time 345.64ms, mfu 0.63%
+iter 4860: loss 0.5650, time 343.24ms, mfu 0.64%
+iter 4870: loss 0.5966, time 352.80ms, mfu 0.64%
+iter 4880: loss 0.5784, time 344.46ms, mfu 0.64%
+iter 4890: loss 0.6048, time 346.68ms, mfu 0.65%
+iter 4900: loss 0.5844, time 353.81ms, mfu 0.65%
+iter 4910: loss 0.5703, time 343.16ms, mfu 0.65%
+iter 4920: loss 0.5825, time 344.70ms, mfu 0.65%
+iter 4930: loss 0.5897, time 354.16ms, mfu 0.65%
+iter 4940: loss 0.5737, time 345.24ms, mfu 0.66%
+iter 4950: loss 0.5712, time 342.85ms, mfu 0.66%
+iter 4960: loss 0.6026, time 353.23ms, mfu 0.66%
+iter 4970: loss 0.6042, time 343.98ms, mfu 0.66%
+iter 4980: loss 0.6288, time 343.58ms, mfu 0.66%
+iter 4990: loss 0.5726, time 386.47ms, mfu 0.66%
+step 5000: train loss 0.5857, val loss 0.5852
+saving checkpoint to out-exp1-layer8
+iter 5000: loss 0.6019, time 50175.67ms, mfu 0.59%

@@ -1,0 +1,53 @@
+Overriding: out_dir = out-exp1-layer8
+Overriding: device = mps
+Overriding: dtype = float16
+Overriding: max_new_tokens = 1000
+Overriding: num_samples = 5
+number of parameters: 6.35M
+Loading meta from data/tinystories/meta.pkl...
+
+Ben and Lily like to play with their toys and toys and books. They look at Ben and Anna first, but they do not want to lose the toys.
+"Maybe there is a lovely toy," Ben says. "It is a car."
+"Maybe if it gets a land whole better," Anna says. "Let's play with it."
+They laugh and have fun. They grab the toy and push out their toys and each other. They are having fun, being mean to play with. They are happy with the car.
+After they are playing, they are tired. They look at the swings and the cars and the big trucks and the room. They are glad that they love cars. They say they will send them to help them. The big truck applaud and wait for the room to put them in the car.
+<|endoftext|>
+One day, a big dog and a small cat were in a farm. They loved to play with toys and eat. The cat liked to dive in front of them. The cat saw a big, red ball. The ball was so hot and many things. The cat liked to play with the ball.
+One day, the ball saw a big brown dog. The dog wanted to go into the brown do
+---------------
+
+Sam had a special lemon and could bring a lemon. Sam and Tim worked together against the lemon and put the lemon cookies in the closet.
+<|endoftext|>
+
+Once there was a little girl named Joy. She was on the wall. One day, Joy went to the store with her mom. She wanted to build a big store. She looked at the store and smiled. Then she saw a tiny man with a big box.
+Joy said, "Mom, look at a tiny picture of the box. It is very red and shiny." He opened the box and opened it. Inside the box, it was hard and strong.
+Joy was very happy. He wanted to show his mom the tiny picture. But then, he found the box of tiny toys. He played with his toys and had burst and food. He felt tickling his toys and carried them to the box of time.
+His mom saw him and knew he should have to take his time away from the box. She asked him what he was in the box, and he said he did not want to be a good friend.
+Just then, something unexpected happened. The box opened up, and the box opened! He fell on a big light 
+---------------
+
+<|endoftext|>
+Once upon a time, there was a little girl named Mia. She had a big screen on her room. Mia had a suit on her face. Mia wanted to find a new toy, so she saw a big box. The box had many colors. Mia walked up to the box and said, "I will give you a toy."
+Mia opened her eyes and found a big room. Mia was so happy to find the box. She put the toys back in the box. She ate the toys all all day long. Mia looked in the box and saw them waiting for them. She smiled and said, "This is not for you to do. Your little boy and be careful wherever are."
+Later, Mia and Tim started to eat the toys. They talked about how hard they could help each other. They were happy and played with their toys and the little boy ate the restaurant. But then, something unexpected happened. The toys started to talk!
+Tim looked at the flower and said, "Hi flower! What do you have a flower?" The flower said, "I am looking. What do you think it is?"
+Tim replied, "I think it is not for being kind and your toys
+---------------
+
+<|endoftext|>
+Once upon a time, in a small house, there was a big hairy ball. In the hairy ball, there was a big box. The box was very big and tall. The box had a toy from a house. He looked sad and scared.
+One day, the box met a girl named Lily. She was sad because she lost her toy. Her mom said, "Why do you get mean?" Lily said, "You have to be more brave and brave. I should have listened to you."
+Lily went to her room and said, "I replace". She was very brave. She had to spend meal to make the toys with her name. She smiled and said, "This is a baked toy, Lily. I have been so inking. I am my friend, the teacher. I like to play with you."
+Lily smiled. She said, "Thank you, teacher. You are my new friend. Let's play together in the big yard. Can we be friends?"
+The brother smiled and replied, "Yes, you can be here to be kind. But remember that we work together and have fun."
+The next day, Lily and the brother became good friends and played together again soon. Lily was not scared of t
+---------------
+
+"Look, Lily!" said her mom. "We told it to play with that it was a dry ball. We will give it back, Anna. We will come back with it."
+They played with the ball all day. They spread water on it. But then, they heard a voice say. "Are you okay, mom?" she asked. Her mom said, "That is a princess, my princess. You can princess the zoo."
+Ben said, "We can print one together, Sam. We can eat it together."
+Mom smiled and said, "Okay, we can print our tower. We can get the princess back, or we can only do."
+<|endoftext|>
+Once upon a time, there was a little boy named Tim. Tim liked to wear things. One day, his mom told him to be new and a baby sight. She was very excited to see the prints and the ships.
+In the park, Tim saw a big cat stuck in the tree. The cat was also scared and seemed to wear the shiny shiny shirt. It was not a perfect shirt anymore. Tim and his mom were very surprised. They found out that now they needed to try. And they never took out things that are not toys, so they apolo
+---------------
